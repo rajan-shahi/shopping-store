@@ -39,7 +39,7 @@ const Footer = () => {
           </a>
         </span>
       </div>
-      <div className=" flex flex-wrap justify-center md:py-3 text-sm text-gray-600">
+      <div className=" flex flex-wrap justify-center py-3 text-sm text-gray-600">
         <span>Designed & Developed By </span>
         <span className=" px-1 text-blue-500 cursor-pointer underline">Rajan Bahadur Shahi</span>No Right
         <span>   Reserved, Free To Use .</span>

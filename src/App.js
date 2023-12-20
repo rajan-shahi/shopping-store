@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Shpop from "./pages/Shpop";
 import Exclusive from "./pages/Exclusive";
+import Booking from "./pages/Booking";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/cust" element={<Customization />} />
             <Route path="/shop" element={<Shpop />} />
             <Route path="/excu" element={<Exclusive />} />
+            <Route path="/book" element={<Booking />} />
           </Routes>
         </div>
       </BrowserRouter>

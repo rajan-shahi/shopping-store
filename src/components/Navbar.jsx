@@ -12,7 +12,7 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  <p>this is testing</p>
+  <p>this is testing</p>;
   return (
     <div className=" flex  justify-center fixed left-0 right-0 top-0  z-10 bg-black">
       <div className=" flex justify-between w-full md:px-0 px-4  md:w-11/12 py-6 ">
@@ -34,9 +34,11 @@ const Navbar = () => {
               Customization
             </h1>
           </Link>
-          <h1 className=" md:flex hidden cursor-pointer hover:underline hover:duration-300">
-            Booking
-          </h1>
+          <Link to={"/book"}>
+            <h1 className=" md:flex hidden cursor-pointer hover:underline hover:duration-300">
+              Booking
+            </h1>
+          </Link>
           <Link to={"/shop"}>
             <h1 className=" md:flex hidden cursor-pointer hover:underline hover:duration-300">
               Shop
@@ -97,6 +99,11 @@ const Navbar = () => {
           <Link onClick={openClose} to={"/excu"}>
             <h1 className=" text-xl  cursor-pointer hover:underline hover:duration-300">
               Exclusive
+            </h1>
+          </Link>
+          <Link onClick={openClose} to={"/book"}>
+            <h1 className=" text-xl  cursor-pointer hover:underline hover:duration-300">
+              Booking
             </h1>
           </Link>
         </div>

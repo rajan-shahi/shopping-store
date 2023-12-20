@@ -1,13 +1,39 @@
 import React from "react";
-import shop1 from "../assets/shop1.webp";
+import shop2 from "../assets/shop2.webp";
+import b1 from "../assets/b1.webp";
+import b2 from "../assets/b2.webp";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+// import required modules
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+
 const Booking = () => {
   return (
     <div className=" flex justify-center">
       <div className="md:flex md:px-0 px-4 justify-between md:w-11/12 w-full">
-        <div className=" flex-1">
-          <img className="" src={shop1} alt="" />
+        <div className=" w-full md:w-5/12">
+          <Swiper
+            cssMode={true}
+            navigation={true}
+            pagination={true}
+            mousewheel={true}
+            keyboard={true}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          >
+            {BookImages.map((BookImage, index) => (
+              <SwiperSlide>
+                <div key={index}>
+                  <img src={BookImage.img} alt="" />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-        <div className=" flex flex-col gap-4 md:py-28  flex-1">
+        <div className=" flex flex-col gap-4 md:py-20  flex-1">
           <h1 className=" md:text-4xl text-3xl text-black">Bomber Jacket</h1>
           <h1 className=" text-md text-gray-800">
             Stylish and versatile jacket that is typically short in length, with
@@ -28,7 +54,9 @@ const Booking = () => {
             <h1 className=" text-2xl">1</h1>
             <h1 className=" text-xl cursor-pointer">+</h1>
           </span>
-          <h1 className=" md:text-3xl text-2xl text-black">PRODUCTION DETAILS</h1>
+          <h1 className=" md:text-3xl text-2xl text-black">
+            PRODUCTION DETAILS
+          </h1>
           <span className=" text-md text-black">
             {" "}
             Speed Demons sporting green jackets are a group of high-octane
@@ -52,3 +80,15 @@ const Booking = () => {
 };
 
 export default Booking;
+
+const BookImages = [
+  {
+    img: shop2,
+  },
+  {
+    img: b1,
+  },
+  {
+    img: b2,
+  },
+];

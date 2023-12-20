@@ -6,7 +6,7 @@ import { BiLogoLinkedin } from "react-icons/bi";
 const Footer = () => {
   return (
     <div className=" flex flex-col justify-center px-4 md:px-10 bg-gray-100">
-      <div className=" flex justify-between py-12">
+      <div className=" flex justify-between md:pt-12 pt-8 pb-3 md:pb-5">
         <h1 className=" cursor-pointer md:flex  hidden">NEWSLETTER</h1>
         <h2 className=" cursor-pointer">©2023 ONLINE SHOPING</h2>
         <span className=" flex gap-5">
@@ -39,7 +39,7 @@ const Footer = () => {
           </a>
         </span>
       </div>
-      <div className=" flex flex-wrap justify-center py-3 text-sm text-gray-600">
+      <div className=" flex flex-wrap justify-center md:pb-7 py-3 text-sm text-gray-600">
         <span>Designed & Developed By </span>
         <a target="-blank"
           href="https://github.com/rajan-shahi?tab=overview&from=2023-12-01&to=2023-12-20"

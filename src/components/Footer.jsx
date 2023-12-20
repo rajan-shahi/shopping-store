@@ -41,8 +41,14 @@ const Footer = () => {
       </div>
       <div className=" flex flex-wrap justify-center py-3 text-sm text-gray-600">
         <span>Designed & Developed By </span>
-        <span className=" px-1 text-blue-500 cursor-pointer underline">Rajan Bahadur Shahi</span>No Right
-        <span>   Reserved, Free To Use .</span>
+        <a target="-blank"
+          href="https://github.com/rajan-shahi?tab=overview&from=2023-12-01&to=2023-12-20"
+          className=" px-1 text-blue-500 cursor-pointer underline"
+        >
+          Rajan Bahadur Shahi
+        </a>
+        No Right
+        <span> Reserved, Free To Use .</span>
       </div>
     </div>
   );

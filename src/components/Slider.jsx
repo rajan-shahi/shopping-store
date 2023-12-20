@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 const Slider = () => {
   return (
@@ -37,11 +38,12 @@ const Slider = () => {
                   <h2 className=" md:text-2xl  text-xl text-black/80">
                     {Ticet.name}
                   </h2>
+                  <Link to="/book">
                   <div className=" flex justify-center  cursor-pointer  ">
                     <span className=" bg-black text-white px-8 py-3  text-md hover:scale-105 duration-300  border rounded-sm">
                       {Ticet.btn}
                     </span>
-                  </div>
+                  </div></Link>
                 </div>
                 <img
                   className=" flex-1 bg-transparent "

@@ -3,6 +3,7 @@ import w1 from "../assets/w1.webp";
 import w2 from "../assets/w2.webp";
 import w4 from "../assets/w4.webp";
 import shop5 from "../assets/shop5.webp";
+import { Link } from "react-router-dom";
 
 const Exclusive = () => {
   return (
@@ -25,9 +26,10 @@ const Exclusive = () => {
               for layering over a t-shirt or sweater in the cooler months or for
               wearing on their own during the warmer months.
             </h1>
+            <Link to={"/book"}>
             <h1 className=" justify-start bg-black  text-white w-max px-8 py-2 hover:scale-105 hover:duration-500">
               <button className="">BOOK NOW</button>{" "}
-            </h1>
+            </h1></Link>
           </div>
         </div>
         <div className=" md:flex justify-between">

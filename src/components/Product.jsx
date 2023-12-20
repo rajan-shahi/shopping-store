@@ -9,6 +9,7 @@ import shop7 from "../assets/shop7.webp";
 import shop8 from "../assets/shop8.webp";
 import { GoPlus } from "react-icons/go";
 import { IoEyeOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Product = () => {
   return (
@@ -27,15 +28,17 @@ const Product = () => {
                 <span className=" flex bg-black text-white font-bold p-1 hover:scale-110 duration-500 rounded cursor-pointer">
                   {Product.iconP}
                 </span>
+                <Link to={"/book"}>
                 <span className=" flex bg-black text-white font-bold p-1 hover:scale-110  duration-500 rounded  cursor-pointer">
                   {Product.iconE}
-                </span>
+                </span></Link>
               </div>
               <img className=" " src={Product.img} alt="" />
               <div className=" flex flex-col justify-center items-center">
+                <Link to={"/book"}>
                 <h1 className="md:text-xl font-bold  hover:border-b-2  hover:border-black border-b-2 border-transparent duration-500 cursor-pointer">
                   {Product.name}
-                </h1>
+                </h1></Link>
                 <h1 className=" text-md hover:border-b-2  hover:border-black border-b-2 border-transparent duration-500 cursor-pointer">
                   {Product.price}
                 </h1>
@@ -52,14 +55,14 @@ export default Product;
 
 const products = [
   {
-    img: shop6,
+    img: shop2,
     name: "SPEED DEMONS-BLACK",
     price: "NRP 3200",
     iconP: <GoPlus />,
     iconE: <IoEyeOutline />,
   },
   {
-    img: shop2,
+    img: shop6,
     name: "SPEED DEMONS-GREEN",
     price: "NRP 3600",
     iconP: <GoPlus />,

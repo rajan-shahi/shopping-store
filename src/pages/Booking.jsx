@@ -3,20 +3,47 @@ import shop1 from "../assets/shop1.webp";
 const Booking = () => {
   return (
     <div className=" flex justify-center">
-      <div className="flex justify-between md:w-11/12 w-full">
+      <div className="md:flex md:px-0 px-4 justify-between md:w-11/12 w-full">
         <div className=" flex-1">
-          <img src={shop1} alt="" />
+          <img className="" src={shop1} alt="" />
         </div>
-        <div className=" flex flex-col gap-5 py-20  flex-1">
-          <h1>Bomber Jacket</h1>
-          <h1>Stylish and versatile jacket that is typically short in length, with a front zip closure</h1>
-          <div className=" flex gap-5">
-            <h1>Colors:</h1>
+        <div className=" flex flex-col gap-4 md:py-28  flex-1">
+          <h1 className=" md:text-4xl text-3xl text-black">Bomber Jacket</h1>
+          <h1 className=" text-md text-gray-800">
+            Stylish and versatile jacket that is typically short in length, with
+            a front zip closure
+          </h1>
+          <div className=" flex gap-5 items-center">
+            <h1 className=" text-2xl text-black ">Colors:</h1>
             <span className=" bg-black h-5 w-5 cursor-pointer"></span>
             <span className="  bg-green-700 h-5 w-5 cursor-pointer"></span>
             <span className="  bg-red-700 h-5 w-5 cursor-pointer"></span>
             <span className="  bg-blue-700 h-5 w-5 cursor-pointer"></span>
             <span className=" bg-gray-700 h-5 w-5 cursor-pointer"></span>
+          </div>
+          <h1 className=" md:text-3xl  text-2xl text-black">NPR. 3700</h1>
+          <span className=" flex  gap-4 items-center">
+            <h1 className=" text-xl  text-black">Qty: </h1>
+            <h1 className=" text-xl cursor-pointer">-</h1>
+            <h1 className=" text-2xl">1</h1>
+            <h1 className=" text-xl cursor-pointer">+</h1>
+          </span>
+          <h1 className=" md:text-3xl text-2xl text-black">PRODUCTION DETAILS</h1>
+          <span className=" text-md text-black">
+            {" "}
+            Speed Demons sporting green jackets are a group of high-octane
+            thrill-seekers who live for the adrenaline rush of fast cars and
+            motorcycles. With a fierce determination and a love for speed, they
+            race through the streets, their engines roaring, leaving a trail of
+            awe and excitement behind them.
+          </span>
+          <div className=" flex gap-5 md:pt-0 pt-4">
+            <button className=" w-full flex-1 bg-black text-white py-2 hover:scale-105 hover:duration-500">
+              ADD TO CARD
+            </button>
+            <button className=" w-full flex-1 bg-black text-white  py-2 hover:scale-105 hover:duration-500">
+              BUY NOW
+            </button>
           </div>
         </div>
       </div>

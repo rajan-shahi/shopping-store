@@ -11,6 +11,10 @@ const Navbar = () => {
   const openClose = () => {
     setNav(!nav);
   };
+  const [icon, setIcon] = useState(false);
+  const handleClick = () => {
+    setIcon(!icon);
+  };
 
   <p>this is testing</p>;
   return (
@@ -21,9 +25,9 @@ const Navbar = () => {
             <h1>SHOPING-STORE</h1>
           </Link>
         </span>
-        <div className="flex items-center  gap-5 text-gray-100 text-md font-bold">
-          <span>
-            {!nav ? (
+        <div className="flex items-center  md:gap-5 gap-2 text-gray-100 text-md font-bold">
+          <span onClick={handleClick}>
+            {!icon ? (
               <GoSun size={25} className=" cursor-pointer" />
             ) : (
               <IoMoonOutline size={25} className=" cursor-pointer" />

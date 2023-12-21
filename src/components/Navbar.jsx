@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className=" flex justify-between w-full md:px-0 px-4  md:w-11/12 py-6 ">
         <span className=" flex  items-center text-white cursor-pointer hover:underline  hover:duration-700  text-xl ">
           <Link to={"/"}>
-            <h1>SHOPING-STORE</h1>
+            <h1>SHOPPING-STORE</h1>
           </Link>
         </span>
         <div className="flex items-center  md:gap-5 gap-2 text-gray-100 text-md font-bold">

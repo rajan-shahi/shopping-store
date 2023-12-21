@@ -13,7 +13,7 @@ const Buy = () => {
         {/* leftBar-Container */}
         <div className=" flex flex-col gap-4 md:flex-1 md:pb-0 pb-12">
           <div className=" flex flex-col gap-1">
-            <h1>express checkout</h1>
+            <h1 className=" text-xl">express checkout</h1>
             <div className=" flex justify-between  gap-3 border border-gray-300 px-4 py-5">
               <h1 className=" hover:scale-105 duration-300 flex justify-center cursor-pointer bg-black text-white w-full py-2">
                 E-SEWA
@@ -31,9 +31,9 @@ const Buy = () => {
             <h1>OR CONTINUE HERE</h1>
             <h1 className=" md:text-md text-sm text-gray-600">
               Already have an account{" "}
-              <span className=" cursor-pointer underline text-blue-600 md:text-xl px-1">
+              <Link to={"/login"} className=" cursor-pointer underline text-blue-600 md:text-xl px-1">
                 Login
-              </span>
+              </Link>
             </h1>
           </div>
           <input

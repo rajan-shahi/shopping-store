@@ -1,5 +1,6 @@
 import React from "react";
 import rajan from "../assets/rajan.jpg";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   return (
@@ -17,9 +18,10 @@ const Profile = () => {
               Hello , Rajan Bahadur Shahi.
             </h1>
             <div className=" flex gap-5">
-              <button className=" hover:scale-105 duration-500 bg-black text-white px-6 py-1">
+
+              <Link to={"/buy"} className=" hover:scale-105 duration-500 bg-black text-white px-6 py-1">
                 LOGOUT
-              </button>
+              </Link>
               <button className=" hover:scale-105 duration-500 bg-black text-white px-6 py-1">
                 EDIT PROFILE
               </button>{" "}

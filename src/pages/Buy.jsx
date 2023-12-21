@@ -1,10 +1,12 @@
 import React from "react";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import shop6 from "../assets/shop6.webp";
 
 const Buy = () => {
   return (
     <div className=" flex justify-center">
       {/* container */}
-      <div className=" flex justify-between w-full md:px-0 px-4 md:w-11/12 gap-2 py-20">
+      <div className=" flex justify-between w-full md:px-0 px-4 md:w-11/12 gap-5 py-20">
         {/* leftBar-Container */}
         <div className=" flex flex-col gap-4 md:flex-1">
           <div className=" flex flex-col gap-1">
@@ -100,7 +102,45 @@ const Buy = () => {
           </button>
         </div>
         {/* rightBar-Container */}
-        <div className=" md:flex-1"></div>
+        <div className=" flex flex-col gap-4 md:flex-1">
+          <div className="div">
+            <h1>YOUR PRODUCTS</h1>
+            <div className=" flex justify-between px-6 py-2 border border-gray-300">
+              <img
+                className=" cursor-pointer h-16 w-16 object-cover"
+                src={shop6}
+                alt=""
+              />
+              <span className=" flex flex-col gap-1">
+                <h1 className=" text-md text-black">Bomber Jacket</h1>
+                <h1 className=" flex gap-5">
+                  <h1 className=" text-gray-600">Qty</h1>
+                  <h1 className=" cursor-pointer">-</h1>
+                  <h1 className=" text-black font-bold text-xl">5</h1>
+                  <h1 className=" cursor-pointer">+</h1>
+                </h1>
+                <h1 className=" flex gap-7">
+                  <h1 className=" text-sm text-gray-600">Price</h1>
+                  <h1>970</h1>
+                </h1>
+              </span>
+              <span className=" text-red-600 cursor-pointer">
+                <RiDeleteBin6Line />
+              </span>
+            </div>
+          </div>
+          <div className=" border-b border-gray-300 py-2"></div>
+          <h1>ENTER COUPON CODE</h1>
+          <h1 className=" text-sm text-gray-600">Enter your coupOn code to get extra discount.</h1>
+
+          <div className="div"></div>
+          <div className="div"></div>
+          <div className="div"></div>
+          <div className="div"></div>
+          <div className="div"></div>
+          <div className="div"></div>
+          <div className="div"></div>
+        </div>
       </div>
     </div>
   );

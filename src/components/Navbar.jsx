@@ -84,7 +84,7 @@ const Navbar = () => {
         >
           <AiOutlineClose size={30} />
         </span>
-        <div className=" border-t border-gray-400 py-5 flex flex-col gap-4">
+        <div className=" border-t border-b  border-gray-400 py-5 flex flex-col gap-4">
           <Link onClick={openClose} to={"/"}>
             <h1 className=" text-xl  cursor-pointer hover:underline hover:duration-300">
               Home
@@ -111,6 +111,11 @@ const Navbar = () => {
             </h1>
           </Link>
         </div>
+        <Link onClick={openClose} to={"/profile"}>
+            <h1 className=" text-xl py-5  cursor-pointer hover:underline hover:duration-300">
+             Profile
+            </h1>
+          </Link>
       </div>
     </div>
   );

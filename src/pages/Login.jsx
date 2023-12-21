@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -13,9 +14,9 @@ const Login = () => {
             through the checkout process faster, store multiple shipping
             addresses, view and track your orders in your account and more.
           </h1>
-          <button className=" bg-black text-white py-2 hover:scale-y-105 duration-500 ">
+          <Link to={"/register"} className=" bg-black  flex justify-center text-white py-2 hover:scale-y-105 duration-500 ">
             REGISTER
-          </button>
+          </Link>
         </div>
         <div className=" flex-1 flex flex-col gap-2">
           <h1 className=" border-b border-gray-300 py-4 text-xl  text-black font-bold">

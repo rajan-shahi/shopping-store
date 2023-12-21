@@ -10,6 +10,7 @@ import Booking from "./pages/Booking";
 import Buy from "./pages/Buy";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/buy" element={<Buy/>} />
             <Route path="/profile" element={<Profile/>} />
             <Route path="/login" element={<Login/>} />
+            <Route path="/register" element={<Register/>} />
           </Routes>
         </div>
       </BrowserRouter>

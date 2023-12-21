@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Shpop from "./pages/Shpop";
 import Exclusive from "./pages/Exclusive";
 import Booking from "./pages/Booking";
+import Buy from "./pages/Buy";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/shop" element={<Shpop />} />
             <Route path="/excu" element={<Exclusive />} />
             <Route path="/book" element={<Booking />} />
+            <Route path="/buy" element={<Buy/>} />
           </Routes>
         </div>
       </BrowserRouter>

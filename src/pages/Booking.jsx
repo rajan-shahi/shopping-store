@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 const Booking = () => {
   return (
@@ -69,9 +70,13 @@ const Booking = () => {
             <button className=" w-full flex-1 bg-black text-white py-2 hover:scale-105 hover:duration-500">
               ADD TO CARD
             </button>
-            <button className=" w-full flex-1 bg-black text-white  py-2 hover:scale-105 hover:duration-500">
+
+            <Link
+              to={"/buy"}
+              className=" flex justify-center  items-center w-full flex-1 bg-black text-white  py-2 hover:scale-105 hover:duration-500"
+            >
               BUY NOW
-            </button>
+            </Link>
           </div>
         </div>
       </div>

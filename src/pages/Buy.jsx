@@ -3,6 +3,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import shop6 from "../assets/shop6.webp";
 import { LuMoveLeft } from "react-icons/lu";
 import { MdArrowRightAlt } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Buy = () => {
   return (
@@ -168,10 +169,10 @@ const Buy = () => {
             <h1>Grand Total :</h1>
             <h1>1420</h1>
           </div>
-          <div className=" flex hover:scale-y-105 duration-700 justify-center items-center gap-2 w-full bg-black text-white  py-2">
+          <Link to={"/profile"} className=" flex hover:scale-y-105 duration-700 justify-center items-center gap-2 w-full bg-black text-white  py-2">
             <LuMoveLeft className=" bg-blue-600 text-white  rounded-sm cursor-pointer" />
             <button className="">EDIT SHIPPING ADDRESS</button>
-          </div>
+          </Link>
           <div className=" flex hover:scale-y-105 duration-700 justify-center items-center gap-2 w-full bg-black text-white  py-2">
             <button className="">CHECK-OUT</button>
             <MdArrowRightAlt className=" bg-blue-600 text-white  rounded-sm cursor-pointer"/> 

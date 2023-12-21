@@ -8,6 +8,7 @@ import Shpop from "./pages/Shpop";
 import Exclusive from "./pages/Exclusive";
 import Booking from "./pages/Booking";
 import Buy from "./pages/Buy";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/excu" element={<Exclusive />} />
             <Route path="/book" element={<Booking />} />
             <Route path="/buy" element={<Buy/>} />
+            <Route path="/profile" element={<Profile/>} />
           </Routes>
         </div>
       </BrowserRouter>

@@ -112,20 +112,27 @@ const Navbar = () => {
           </Link>
         </div>
         <Link onClick={openClose} to={"/profile"}>
-            <h1 className=" text-xl py-2 cursor-pointer hover:underline hover:duration-300">
-             Profile
-            </h1>
-          </Link>
-          <Link onClick={openClose} to={"/login"}>
-            <h1 className=" text-xl  py-2 cursor-pointer hover:underline hover:duration-300">
-             Login
-            </h1>
-          </Link>
-          <Link onClick={openClose} to={"/register"}>
-            <h1 className=" text-xl pb-5 border-b border-gray-300 py-2  cursor-pointer hover:underline hover:duration-300">
-             Register
-            </h1>
-          </Link>
+          <h1 className=" text-xl py-2 cursor-pointer hover:underline hover:duration-300">
+            Profile
+          </h1>
+        </Link>
+        <Link onClick={openClose} to={"/login"}>
+          <h1 className=" text-xl  py-2 cursor-pointer hover:underline hover:duration-300">
+            Login
+          </h1>
+        </Link>
+
+        <Link onClick={openClose} to={"/register"}>
+          <h1 className=" pb-8 text-xl  py-2  cursor-pointer hover:underline hover:duration-300">
+            Register
+          </h1>
+        </Link>
+
+        <Link onClick={openClose} to={"/excu"} className=" py-6 border-t border-gray-300">
+          <button className=" bg-black text-white w-full py-2">
+            EXCLUSIVE
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const Profile = () => {
         {/* profile */}
         <div className="md:flex items-center gap-10">
           <img
-            className=" h-32 w-32 rounded-full px-2 flex object-cover"
+            className=" h-32 w-32 cursor-pointer rounded-full px-2 flex object-cover"
             src={rajan}
             alt=""
           />

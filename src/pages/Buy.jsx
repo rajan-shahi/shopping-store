@@ -4,9 +4,9 @@ const Buy = () => {
   return (
     <div className=" flex justify-center">
       {/* container */}
-      <div className=" flex justify-between w-11/12 gap-2 py-20">
+      <div className=" flex justify-between w-full md:px-0 px-4 md:w-11/12 gap-2 py-20">
         {/* leftBar-Container */}
-        <div className=" flex flex-col gap-4 flex-1">
+        <div className=" flex flex-col gap-4 md:flex-1">
           <div className=" flex flex-col gap-1">
             <h1>express checkout</h1>
             <div className=" flex justify-between  gap-3 border border-gray-300 px-4 py-5">
@@ -24,9 +24,9 @@ const Buy = () => {
           <div className=" border-b border-gray-300 py-6"></div>
           <div className=" flex justify-between items-center py-3">
             <h1>OR CONTINUE HERE</h1>
-            <h1 className=" text-md text-gray-600">
+            <h1 className=" md:text-md text-sm text-gray-600">
               Already have an account{" "}
-              <span className=" cursor-pointer underline text-blue-600 text-xl px-1">
+              <span className=" cursor-pointer underline text-blue-600 md:text-xl px-1">
                 Login
               </span>
             </h1>
@@ -43,14 +43,16 @@ const Buy = () => {
             type="text"
             placeholder="Ktm Outside The Roads"
           />
-          <div className=" flex justify-between gap-3">
+          <div className=" md:flex  justify-between gap-3">
+            <div className=" flex-1   w-full md:py-0 py-3">
+              <input
+                className="  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+                type="text"
+                placeholder=" First Name"
+              />{" "}
+            </div>
             <input
-              className="  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
-              type="text"
-              placeholder=" First Name"
-            />
-            <input
-              className=" w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+              className=" flex-1 w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
               type="text"
               placeholder=" Last Name"
             />
@@ -93,12 +95,12 @@ const Buy = () => {
             type="number"
             placeholder="Enter OTP"
           />
-           <button className=" bg-black py-3 text-white hover:scale-y-105 hover:duration-500">
+          <button className=" bg-black py-3 text-white hover:scale-y-105 hover:duration-500">
             VERYFY
           </button>
         </div>
         {/* rightBar-Container */}
-        <div className=" flex-1"></div>
+        <div className=" md:flex-1"></div>
       </div>
     </div>
   );

@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Register = () => {
   return (
     <div className=" flex justify-center">
-      <div className=" flex flex-col w-10/12 py-24 gap-4">
+      <div className=" flex flex-col md:px-0 px-4 w-full md:w-10/12 md:py-24  pt-16 md:pb-20 pb-1  gap-4">
         <h1 className="  border-b border-gray-300 pb-4">CREATE ACCOUNT</h1>
-        <div className=" grid grid-cols-2 gap-4 ">
+        <div className=" grid md:grid-cols-2 gap-4 ">
           <input
             className=" border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             type="name"
@@ -49,7 +49,7 @@ const Register = () => {
           <button className=" w-full bg-black  flex justify-center text-white py-2 hover:scale-y-105 duration-500 ">
             REGISTER
           </button>
-          <h1 className=" flex justify-center">
+          <h1 className=" md:pt-0 pt-5 flex justify-center">
             <Link to={"/login"} className=" underline">Back to Login</Link>
           </h1>
         </div>

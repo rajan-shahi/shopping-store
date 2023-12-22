@@ -11,6 +11,7 @@ import Buy from "./pages/Buy";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Privacy from "./pages/Privacy";
 
 function App() {
   return (
@@ -24,10 +25,11 @@ function App() {
             <Route path="/shop" element={<Shpop />} />
             <Route path="/excu" element={<Exclusive />} />
             <Route path="/book" element={<Booking />} />
-            <Route path="/buy" element={<Buy/>} />
-            <Route path="/profile" element={<Profile/>} />
-            <Route path="/login" element={<Login/>} />
-            <Route path="/register" element={<Register/>} />
+            <Route path="/buy" element={<Buy />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/privacy" element={<Privacy />} />
           </Routes>
         </div>
       </BrowserRouter>

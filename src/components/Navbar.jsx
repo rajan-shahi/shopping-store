@@ -159,16 +159,15 @@ const Navbar = () => {
         </Link>
 
         <Link onClick={openClose} to={"/register"}>
-          <h1 className=" pb-8 text-xl  py-2  cursor-pointer hover:underline hover:duration-300">
+          <h1 className=" pb-4 text-xl  py-2  cursor-pointer hover:underline hover:duration-300">
             Register
           </h1>
         </Link>
-
-        <Link
-          onClick={openClose}
-          to={"/excu"}
-          className=" py-6 border-t border-gray-300"
-        >
+        <div className=" flex flex-col gap-3 border-t border-gray-300 py-5">
+          <Link onClick={openClose} to={"/privacy"} className=" text-xl cursor-pointer">Privacy Policy</Link>
+          <h1 className=" text-xl cursor-pointer">Terms and Conditions</h1>
+        </div>
+        <Link onClick={openClose} to={"/excu"} className=" py-6">
           <button className=" bg-black text-white w-full py-2">
             EXCLUSIVE
           </button>

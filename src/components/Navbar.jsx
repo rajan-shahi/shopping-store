@@ -16,6 +16,11 @@ const Navbar = () => {
     setIcon(!icon);
   };
 
+  const [profile, setProfile] = useState(true);
+  const profileOpenClose = () => {
+    setProfile(!profile);
+  };
+
   <p>this is testing</p>;
   return (
     <div className=" flex  justify-center fixed left-0 right-0 top-0  z-10 bg-black">
@@ -53,7 +58,11 @@ const Navbar = () => {
               Exclusive
             </h1>
           </Link>
-          <IoPeople size={20} className=" md:flex hidden cursor-pointer" />
+          <IoPeople
+            onClick={profileOpenClose}
+            size={20}
+            className=" relative md:flex hidden cursor-pointer"
+          />
           <span
             onClick={openClose}
             className="  cursor-pointer bg-gray-100 rounded-full hover:scale-105 duration-300 p-1"
@@ -63,6 +72,33 @@ const Navbar = () => {
               className=" text-black font-bold "
             />
           </span>{" "}
+        </div>
+        <div className=" absolute top-20 right-20 ">
+          {!profile && (
+            <div className=" border border-gray-300 rounded-lg  bg-white flex flex-col gap-2  px-4 pr-8 py-5 z-10 ">
+              <Link
+                onClick={profileOpenClose}
+                to={"/profile"}
+                className=" cursor-pointer hover:underline"
+              >
+                Prifile
+              </Link>
+              <Link
+                onClick={profileOpenClose}
+                to={"/login"}
+                className=" cursor-pointer hover:underline"
+              >
+                Login
+              </Link>
+              <Link
+                onClick={profileOpenClose}
+                to={"/register"}
+                className=" cursor-pointer hover:underline"
+              >
+                Register
+              </Link>
+            </div>
+          )}
         </div>
         {nav ? (
           <div className=" bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
@@ -128,7 +164,11 @@ const Navbar = () => {
           </h1>
         </Link>
 
-        <Link onClick={openClose} to={"/excu"} className=" py-6 border-t border-gray-300">
+        <Link
+          onClick={openClose}
+          to={"/excu"}
+          className=" py-6 border-t border-gray-300"
+        >
           <button className=" bg-black text-white w-full py-2">
             EXCLUSIVE
           </button>

@@ -6,6 +6,16 @@ import { BiLogoLinkedin } from "react-icons/bi";
 const Footer = () => {
   return (
     <div className=" flex flex-col justify-center px-4 md:px-10 bg-gray-100">
+      <div className=" md:hidden flex  pt-10 justify-center flex-col gap-4">
+        <h1 className=" pt-2">Email Address</h1>
+        <input
+            className="  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+            type="email"
+            name="email"
+            placeholder="Example@gmail.com"
+          />{" "}
+          <button className=" flex justify-center bg-black text-white py-2">SEND ME COOLSTUFF</button>
+      </div>
       <div className=" flex justify-between md:pt-12 pt-8 pb-3 md:pb-5">
         <h1 className=" cursor-pointer md:flex  hidden">NEWSLETTER</h1>
         <h2 className=" cursor-pointer">©2023 ONLINE SHOPING</h2>

@@ -374,7 +374,7 @@ const Navbar = () => {
               <RiDeleteBinLine size={20} />
             </div>
           </div>
-          <div className="   md:pt-72 pt-20">
+          <div className="   md:pt-72 pt-32">
             <Link onClick={rightnavOpenClose} to={"/buy"} className=" hover:scale-105 duration-500  bg-black text-white md:px-28 px-32 py-2">CHECK OUT</Link>
             </div>{" "}
         </div>

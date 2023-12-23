@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { IoPeople } from "react-icons/io5";
 import { GoSun } from "react-icons/go";
 import { IoMoonOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -20,11 +20,18 @@ const Navbar = () => {
   const profileOpenClose = () => {
     setProfile(!profile);
   };
-  
+
+  const location = useLocation();
+  console.log(location.pathname);
+
   return (
     <div className=" flex  justify-center fixed left-0 right-0 top-0  z-10 bg-black">
-      <div className=" flex justify-between w-full md:px-0 px-4  md:w-11/12 py-6 ">
-        <span className=" flex  items-center text-white cursor-pointer hover:underline  hover:duration-700  ">
+      <div className=" flex justify-between w-full md:px-0 px-4  md:w-11/12  py-5 items-center ">
+        <span
+          className={`${
+            location.pathname === "/" ? " underline font-bold" : ""
+          } md:flex hidden cursor-pointer text-white font-bold hover:underline hover:duration-300`}
+        >
           <Link to={"/"}>
             <h1>SHOPPING-STORE</h1>
           </Link>
@@ -38,22 +45,39 @@ const Navbar = () => {
             )}{" "}
           </span>
           <Link to={"/cust"}>
-            <h1 className=" md:flex hidden cursor-pointer hover:underline hover:duration-300">
+            <h1
+              className={`${
+                location.pathname === "/cust" ? " underline font-bold" : ""
+              } md:flex hidden cursor-pointer hover:underline hover:duration-300`}
+            >
               Customization
             </h1>
           </Link>
           <Link to={"/book"}>
-            <h1 className=" md:flex hidden cursor-pointer hover:underline hover:duration-300">
+            <h1
+              className={`${
+                location.pathname === "/book" ? " underline font-bold" : ""
+              } md:flex hidden cursor-pointer hover:underline hover:duration-300`}
+            >
               Booking
             </h1>
           </Link>
           <Link to={"/shop"}>
-            <h1 className=" md:flex hidden cursor-pointer hover:underline hover:duration-300">
+            <h1
+              className={`${
+                location.pathname === "/shop" ? " underline font-bold" : ""
+              } md:flex hidden cursor-pointer hover:underline hover:duration-300`}
+            >
               Shop
             </h1>
           </Link>
           <Link to={"/excu"}>
-            <h1 className=" md:flex hidden cursor-pointer hover:underline hover:duration-300">
+            <h1
+              c
+              className={`${
+                location.pathname === "/excu" ? " underline font-bold" : ""
+              } md:flex hidden cursor-pointer hover:underline hover:duration-300`}
+            >
               Exclusive
             </h1>
           </Link>
@@ -121,56 +145,96 @@ const Navbar = () => {
         </span>
         <div className=" border-t border-b  border-gray-400 py-4 flex flex-col gap-4">
           <Link onClick={openClose} to={"/"}>
-            <h1 className="   cursor-pointer hover:underline hover:duration-300">
+            <h1
+              className={`${
+                location.pathname === "/" ? " text-black font-bold" : ""
+              } cursor-pointer hover:underline hover:duration-300`}
+            >
               Home
             </h1>
           </Link>
           <Link onClick={openClose} to={"/shop"}>
-            <h1 className="   cursor-pointer hover:underline hover:duration-300">
+            <h1
+              className={`${
+                location.pathname === "/shop" ? " text-black font-bold" : ""
+              } cursor-pointer hover:underline hover:duration-300`}
+            >
               Shop
             </h1>
           </Link>
           <Link onClick={openClose} to={"/excu"}>
-            <h1 className="   cursor-pointer hover:underline hover:duration-300">
+            <h1
+              className={`${
+                location.pathname === "/excu" ? " text-black font-bold" : ""
+              } cursor-pointer hover:underline hover:duration-300`}
+            >
               Exclusive
             </h1>
           </Link>
           <Link onClick={openClose} to={"/cust"}>
-            <h1 className="   cursor-pointer hover:underline hover:duration-300">
+            <h1
+              className={`${
+                location.pathname === "/cust" ? " text-black font-bold" : ""
+              } cursor-pointer hover:underline hover:duration-300`}
+            >
               Customization
             </h1>
           </Link>
           <Link onClick={openClose} to={"/contact"}>
-            <h1 className="   cursor-pointer hover:underline hover:duration-300">
+            <h1
+              className={`${
+                location.pathname === "/contact" ? " text-black font-bold" : ""
+              } cursor-pointer hover:underline hover:duration-300`}
+            >
               Contact
             </h1>
           </Link>
 
           <Link onClick={openClose} to={"/about"}>
-            <h1 className="   cursor-pointer hover:underline hover:duration-300">
+            <h1
+              className={`${
+                location.pathname === "/about" ? " text-black font-bold" : ""
+              } cursor-pointer hover:underline hover:duration-300`}
+            >
               About Us
             </h1>
           </Link>
 
           <Link onClick={openClose} to={"/book"}>
-            <h1 className="   cursor-pointer hover:underline hover:duration-300">
+            <h1
+              className={`${
+                location.pathname === "/book" ? " text-black font-bold" : ""
+              } cursor-pointer hover:underline hover:duration-300`}
+            >
               Booking
             </h1>
           </Link>
         </div>
         <Link onClick={openClose} to={"/profile"}>
-          <h1 className="  py-2 cursor-pointer hover:underline hover:duration-300">
+          <h1
+            className={`${
+              location.pathname === "/profile" ? " text-black font-bold" : ""
+            } cursor-pointer hover:underline hover:duration-300 py-2`}
+          >
             Profile
           </h1>
         </Link>
         <Link onClick={openClose} to={"/login"}>
-          <h1 className="   py-2 cursor-pointer hover:underline hover:duration-300">
+          <h1
+            className={`${
+              location.pathname === "/login" ? " text-black font-bold" : ""
+            } cursor-pointer hover:underline pb-2 hover:duration-300`}
+          >
             Login
           </h1>
         </Link>
 
         <Link onClick={openClose} to={"/register"}>
-          <h1 className=" pb-4   py-2  cursor-pointer hover:underline hover:duration-300">
+          <h1
+            className={`${
+              location.pathname === "/register" ? " text-black font-bold" : ""
+            } cursor-pointer hover:underline pb-2 hover:duration-300`}
+          >
             Register
           </h1>
         </Link>
@@ -178,11 +242,19 @@ const Navbar = () => {
           <Link
             onClick={openClose}
             to={"/privacy"}
-            className="  cursor-pointer"
+            className={`${
+              location.pathname === "/privacy" ? " text-black font-bold" : ""
+            } cursor-pointer hover:underline hover:duration-300`}
           >
             Privacy Policy
           </Link>
-          <Link onClick={openClose} to={"/terms"} className="  cursor-pointer">
+          <Link
+            onClick={openClose}
+            to={"/terms"}
+            className={`${
+              location.pathname === "/terms" ? " text-black font-bold" : ""
+            } cursor-pointer hover:underline hover:duration-300`}
+          >
             Terms and Conditions
           </Link>
         </div>

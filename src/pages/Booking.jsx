@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import shop2 from "../assets/shop2.webp";
 import b1 from "../assets/b1.webp";
 import b2 from "../assets/b2.webp";
@@ -13,6 +13,14 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import { Link } from "react-router-dom";
 
 const Booking = () => {
+  const [count, setCount] = useState(1);
+  const increase = () => {
+    setCount(count + 1);
+  };
+  const decrease = () => {
+    setCount(count - 1);
+  };
+
   return (
     <div className=" flex justify-center">
       <div className="md:flex md:px-0 px-4 justify-between md:w-11/12 w-full">
@@ -51,9 +59,13 @@ const Booking = () => {
           <h1 className=" md:text-3xl  text-2xl text-black">NPR. 3700</h1>
           <span className=" flex  gap-4 items-center">
             <h1 className=" text-xl  text-black">Qty: </h1>
-            <h1 className=" text-xl cursor-pointer">-</h1>
-            <h1 className=" text-2xl">1</h1>
-            <h1 className=" text-xl cursor-pointer">+</h1>
+            <h1 onClick={decrease} className=" text-xl cursor-pointer">
+              -
+            </h1>
+            <h1 className=" text-2xl">{count}</h1>
+            <h1 onClick={increase} className=" text-xl cursor-pointer">
+              +
+            </h1>
           </span>
           <h1 className=" md:text-3xl text-2xl text-black">
             PRODUCTION DETAILS

@@ -6,12 +6,22 @@ import { GoSun } from "react-icons/go";
 import { IoMoonOutline } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
 import { PiShoppingCart } from "react-icons/pi";
+import shop6 from "../assets/shop6.webp";
+import { RiDeleteBinLine } from "react-icons/ri";
+import shop1 from "../assets/shop1.webp";
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const openClose = () => {
     setNav(!nav);
   };
+
+  const [rightnav, setRightnav] = useState(false);
+  const rightnavOpenClose = () => {
+    setRightnav(!rightnav);
+  };
+
   const [icon, setIcon] = useState(false);
   const handleClick = () => {
     setIcon(!icon);
@@ -86,7 +96,10 @@ const Navbar = () => {
               Exclusive
             </h1>
           </Link>
-          <span className=" text-white font-bold md:pr-0 pr-3">
+          <span
+            onClick={rightnavOpenClose}
+            className=" text-white font-bold md:pr-0 pr-3"
+          >
             <PiShoppingCart size={25} className=" cursor-pointer" />
           </span>
           <IoPeople
@@ -136,8 +149,13 @@ const Navbar = () => {
         ) : (
           ""
         )}
+        {rightnav ? (
+          <div className=" bg-black/80 fixed w-full h-screen z-10 top-0  right-0"></div>
+        ) : (
+          ""
+        )}
       </div>
-      {/* {sideNabar} */}
+      {/* {RightNabar} */}
       <div
         className={
           nav
@@ -295,6 +313,71 @@ const Navbar = () => {
             EXCLUSIVE
           </button>
         </Link>
+      </div>
+      {/* leftnavbar */}
+
+      <div
+        className={
+          rightnav
+            ? " px-5 fixed  left-0 top-0 w-full  md:w-[350px] h-screen bg-white z-10 duration-300  "
+            : "  px-5 fixed left-[-100%] top-0  w-[350px] h-screen bg-white z-10 duration-300  "
+        }
+      >
+        <span className=" py-6 flex justify-between border-b border-gray-300 px-5">
+          <h1 className=" text-2xl  text-black">My Cart</h1>
+          <AiOutlineClose size={25} className="" onClick={rightnavOpenClose} />
+        </span>
+        <div className=" flex flex-col gap-8 py-6">
+          <div className="flex py-3 px-4 justify-between border  border-gray-300">
+            <img
+              className=" h-14 w-14 object-cover cursor-pointer"
+              src={shop6}
+              alt=""
+            />
+            <div className=" flex flex-col gap-1">
+              <h1 className=" text-xl text-gray-800">Bomber Jacket</h1>
+              <span className=" flex gap-4">
+                <h1 className=" text-gray-600">Qty</h1>
+                <h1 className=" cursor-pointer">-</h1>
+                <h1 className=" text-xl ">5</h1>
+                <h1 className=" cursor-pointer">+</h1>
+              </span>
+              <h1 className=" flex gap-5">
+                <h1 className=" text-gray-600">Price</h1>
+                <h1 className=" text-xl">7512</h1>
+              </h1>
+            </div>
+            <div className=" text-red-500 cursor-pointer">
+              <RiDeleteBinLine size={20} />
+            </div>
+          </div>
+          <div className="flex py-3 px-4 justify-between border  border-gray-300">
+            <img
+              className=" h-14 w-14 object-cover cursor-pointer"
+              src={shop1}
+              alt=""
+            />
+            <div className=" flex flex-col gap-1">
+              <h1 className=" text-xl text-gray-800">Bomber Jacket</h1>
+              <span className=" flex gap-4">
+                <h1 className=" text-gray-600">Qty</h1>
+                <h1 className=" cursor-pointer">-</h1>
+                <h1 className=" text-xl ">4</h1>
+                <h1 className=" cursor-pointer">+</h1>
+              </span>
+              <h1 className=" flex gap-5">
+                <h1 className=" text-gray-600">Price</h1>
+                <h1 className=" text-xl">3690</h1>
+              </h1>
+            </div>
+            <div className=" text-red-500 cursor-pointer">
+              <RiDeleteBinLine size={20} />
+            </div>
+          </div>
+          <div className="   md:pt-72 pt-96">
+            <Link onClick={rightnavOpenClose} to={"/buy"} className=" hover:scale-105 duration-500  bg-black text-white md:px-28 px-32 py-2">CHECK OUT</Link>
+            </div>{" "}
+        </div>
       </div>
     </div>
   );

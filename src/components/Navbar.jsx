@@ -136,6 +136,11 @@ const Navbar = () => {
               Shop
             </h1>
           </Link>
+          <Link onClick={openClose} to={"/about"}>
+            <h1 className=" text-xl  cursor-pointer hover:underline hover:duration-300">
+             About
+            </h1>
+          </Link>
           <Link onClick={openClose} to={"/excu"}>
             <h1 className=" text-xl  cursor-pointer hover:underline hover:duration-300">
               Exclusive

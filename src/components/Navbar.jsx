@@ -165,7 +165,7 @@ const Navbar = () => {
         </Link>
         <div className=" flex flex-col gap-3 border-t border-gray-300 py-5">
           <Link onClick={openClose} to={"/privacy"} className=" text-xl cursor-pointer">Privacy Policy</Link>
-          <h1 className=" text-xl cursor-pointer">Terms and Conditions</h1>
+          <Link onClick={openClose} to={"/terms"} className=" text-xl cursor-pointer">Terms and Conditions</Link>
         </div>
         <Link onClick={openClose} to={"/excu"} className=" py-6">
           <button className=" bg-black text-white w-full py-2">

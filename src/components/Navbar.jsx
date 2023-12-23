@@ -32,7 +32,7 @@ const Navbar = () => {
             <h1>SHOPPING-STORE</h1>
           </Link>
         </span>
-        <div className="flex items-center  md:gap-5 gap-2 text-gray-100 text-md font-bold">
+        <div className="flex items-center  md:gap-5  gap-1 text-gray-100 text-md font-bold">
           <span onClick={handleClick}>
             {!icon ? (
               <GoSun size={25} className=" cursor-pointer" />

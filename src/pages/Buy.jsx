@@ -174,7 +174,7 @@ const Buy = () => {
             <button className="">EDIT SHIPPING ADDRESS</button>
           </Link>
           <div className=" flex hover:scale-y-105 duration-700 justify-center items-center gap-2 w-full bg-black text-white  py-2">
-            <button className="">CHECK-OUT</button>
+            <Link to={"/book"} className="">CHECK-OUT</Link>
             <MdArrowRightAlt className=" bg-blue-600 text-white  rounded-sm cursor-pointer"/> 
           </div>
         </div>

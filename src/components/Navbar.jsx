@@ -20,12 +20,11 @@ const Navbar = () => {
   const profileOpenClose = () => {
     setProfile(!profile);
   };
-
-  <p>this is testing</p>;
+  
   return (
     <div className=" flex  justify-center fixed left-0 right-0 top-0  z-10 bg-black">
       <div className=" flex justify-between w-full md:px-0 px-4  md:w-11/12 py-6 ">
-        <span className=" flex  items-center text-white cursor-pointer hover:underline  hover:duration-700  text-xl ">
+        <span className=" flex  items-center text-white cursor-pointer hover:underline  hover:duration-700  ">
           <Link to={"/"}>
             <h1>SHOPPING-STORE</h1>
           </Link>
@@ -122,60 +121,70 @@ const Navbar = () => {
         </span>
         <div className=" border-t border-b  border-gray-400 py-4 flex flex-col gap-4">
           <Link onClick={openClose} to={"/"}>
-            <h1 className=" text-xl  cursor-pointer hover:underline hover:duration-300">
+            <h1 className="   cursor-pointer hover:underline hover:duration-300">
               Home
             </h1>
           </Link>
+          <Link onClick={openClose} to={"/shop"}>
+            <h1 className="   cursor-pointer hover:underline hover:duration-300">
+              Shop
+            </h1>
+          </Link>
+          <Link onClick={openClose} to={"/excu"}>
+            <h1 className="   cursor-pointer hover:underline hover:duration-300">
+              Exclusive
+            </h1>
+          </Link>
           <Link onClick={openClose} to={"/cust"}>
-            <h1 className=" text-xl  cursor-pointer hover:underline hover:duration-300">
+            <h1 className="   cursor-pointer hover:underline hover:duration-300">
               Customization
             </h1>
           </Link>
           <Link onClick={openClose} to={"/contact"}>
-            <h1 className=" text-xl  cursor-pointer hover:underline hover:duration-300">
-            Contact
+            <h1 className="   cursor-pointer hover:underline hover:duration-300">
+              Contact
             </h1>
           </Link>
-          <Link onClick={openClose} to={"/shop"}>
-            <h1 className=" text-xl  cursor-pointer hover:underline hover:duration-300">
-              Shop
-            </h1>
-          </Link>
+
           <Link onClick={openClose} to={"/about"}>
-            <h1 className=" text-xl  cursor-pointer hover:underline hover:duration-300">
-             About
+            <h1 className="   cursor-pointer hover:underline hover:duration-300">
+              About Us
             </h1>
           </Link>
-          <Link onClick={openClose} to={"/excu"}>
-            <h1 className=" text-xl  cursor-pointer hover:underline hover:duration-300">
-              Exclusive
-            </h1>
-          </Link>
+
           <Link onClick={openClose} to={"/book"}>
-            <h1 className=" text-xl  cursor-pointer hover:underline hover:duration-300">
+            <h1 className="   cursor-pointer hover:underline hover:duration-300">
               Booking
             </h1>
           </Link>
         </div>
         <Link onClick={openClose} to={"/profile"}>
-          <h1 className=" text-xl py-2 cursor-pointer hover:underline hover:duration-300">
+          <h1 className="  py-2 cursor-pointer hover:underline hover:duration-300">
             Profile
           </h1>
         </Link>
         <Link onClick={openClose} to={"/login"}>
-          <h1 className=" text-xl  py-2 cursor-pointer hover:underline hover:duration-300">
+          <h1 className="   py-2 cursor-pointer hover:underline hover:duration-300">
             Login
           </h1>
         </Link>
 
         <Link onClick={openClose} to={"/register"}>
-          <h1 className=" pb-4 text-xl  py-2  cursor-pointer hover:underline hover:duration-300">
+          <h1 className=" pb-4   py-2  cursor-pointer hover:underline hover:duration-300">
             Register
           </h1>
         </Link>
         <div className=" flex flex-col gap-3 border-t border-gray-300 py-5">
-          <Link onClick={openClose} to={"/privacy"} className=" text-xl cursor-pointer">Privacy Policy</Link>
-          <Link onClick={openClose} to={"/terms"} className=" text-xl cursor-pointer">Terms and Conditions</Link>
+          <Link
+            onClick={openClose}
+            to={"/privacy"}
+            className="  cursor-pointer"
+          >
+            Privacy Policy
+          </Link>
+          <Link onClick={openClose} to={"/terms"} className="  cursor-pointer">
+            Terms and Conditions
+          </Link>
         </div>
         <Link onClick={openClose} to={"/excu"} className=" py-6">
           <button className=" bg-black text-white w-full py-2">

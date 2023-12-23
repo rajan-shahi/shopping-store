@@ -5,6 +5,7 @@ import { IoPeople } from "react-icons/io5";
 import { GoSun } from "react-icons/go";
 import { IoMoonOutline } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
+import { PiShoppingCart } from "react-icons/pi";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -85,9 +86,12 @@ const Navbar = () => {
               Exclusive
             </h1>
           </Link>
+          <span className=" text-white font-bold md:pr-0 pr-3">
+            <PiShoppingCart size={25} className=" cursor-pointer" />
+          </span>
           <IoPeople
             onClick={profileOpenClose}
-            size={20}
+            size={25}
             className=" relative md:flex hidden cursor-pointer"
           />
           <span

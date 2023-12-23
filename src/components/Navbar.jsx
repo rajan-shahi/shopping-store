@@ -131,6 +131,11 @@ const Navbar = () => {
               Customization
             </h1>
           </Link>
+          <Link onClick={openClose} to={"/contact"}>
+            <h1 className=" text-xl  cursor-pointer hover:underline hover:duration-300">
+            Contact
+            </h1>
+          </Link>
           <Link onClick={openClose} to={"/shop"}>
             <h1 className=" text-xl  cursor-pointer hover:underline hover:duration-300">
               Shop

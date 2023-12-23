@@ -14,6 +14,7 @@ import Register from "./pages/Register";
 import Privacy from "./pages/Privacy";
 import About from "./pages/About";
 import Terms from './pages/Terms';
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={< Terms />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </BrowserRouter>

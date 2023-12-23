@@ -27,11 +27,7 @@ const Navbar = () => {
   return (
     <div className=" flex  justify-center fixed left-0 right-0 top-0  z-10 bg-black">
       <div className=" flex justify-between w-full md:px-0 px-4  md:w-11/12  py-5 items-center ">
-        <span
-          className={`${
-            location.pathname === "/" ? " underline font-bold" : ""
-          } cursor-pointer text-white font-bold hover:underline hover:duration-300`}
-        >
+        <span className="cursor-pointer text-white font-bold hover:underline hover:duration-300">
           <Link to={"/"}>
             <h1>SHOPPING-STORE</h1>
           </Link>
@@ -44,6 +40,15 @@ const Navbar = () => {
               <IoMoonOutline size={25} className=" cursor-pointer" />
             )}{" "}
           </span>
+          <Link to={"/"}>
+            <h1
+              className={`${
+                location.pathname === "/" ? " underline font-bold" : ""
+              } md:flex hidden cursor-pointer hover:underline hover:duration-300`}
+            >
+              Home
+            </h1>
+          </Link>
           <Link to={"/cust"}>
             <h1
               className={`${
@@ -156,8 +161,10 @@ const Navbar = () => {
           </Link>
           <Link onClick={openClose} to={"/shop"}>
             <h1
-              className={`${ 
-                location.pathname === "/shop" ? " underline text-black font-bold" : ""
+              className={`${
+                location.pathname === "/shop"
+                  ? " underline text-black font-bold"
+                  : ""
               } cursor-pointer hover:underline hover:duration-300`}
             >
               Shop
@@ -166,7 +173,9 @@ const Navbar = () => {
           <Link onClick={openClose} to={"/excu"}>
             <h1
               className={`${
-                location.pathname === "/excu" ? " underline text-black font-bold" : ""
+                location.pathname === "/excu"
+                  ? " underline text-black font-bold"
+                  : ""
               } cursor-pointer hover:underline hover:duration-300`}
             >
               Exclusive
@@ -175,7 +184,9 @@ const Navbar = () => {
           <Link onClick={openClose} to={"/cust"}>
             <h1
               className={`${
-                location.pathname === "/cust" ? " underline text-black font-bold" : ""
+                location.pathname === "/cust"
+                  ? " underline text-black font-bold"
+                  : ""
               } cursor-pointer hover:underline hover:duration-300`}
             >
               Customization
@@ -184,7 +195,9 @@ const Navbar = () => {
           <Link onClick={openClose} to={"/contact"}>
             <h1
               className={`${
-                location.pathname === "/contact" ? " underline text-black font-bold" : ""
+                location.pathname === "/contact"
+                  ? " underline text-black font-bold"
+                  : ""
               } cursor-pointer hover:underline hover:duration-300`}
             >
               Contact
@@ -194,7 +207,9 @@ const Navbar = () => {
           <Link onClick={openClose} to={"/about"}>
             <h1
               className={`${
-                location.pathname === "/about" ? "underline text-black font-bold" : ""
+                location.pathname === "/about"
+                  ? "underline text-black font-bold"
+                  : ""
               } cursor-pointer hover:underline hover:duration-300`}
             >
               About Us
@@ -204,7 +219,9 @@ const Navbar = () => {
           <Link onClick={openClose} to={"/book"}>
             <h1
               className={`${
-                location.pathname === "/book" ? " underline text-black font-bold" : ""
+                location.pathname === "/book"
+                  ? " underline text-black font-bold"
+                  : ""
               } cursor-pointer hover:underline hover:duration-300`}
             >
               Booking
@@ -214,7 +231,9 @@ const Navbar = () => {
         <Link onClick={openClose} to={"/profile"}>
           <h1
             className={`${
-              location.pathname === "/profile" ? " underline text-black font-bold" : ""
+              location.pathname === "/profile"
+                ? " underline text-black font-bold"
+                : ""
             } cursor-pointer hover:underline hover:duration-300 py-2`}
           >
             Profile
@@ -223,7 +242,9 @@ const Navbar = () => {
         <Link onClick={openClose} to={"/login"}>
           <h1
             className={`${
-              location.pathname === "/login" ? " underline text-black font-bold" : ""
+              location.pathname === "/login"
+                ? " underline text-black font-bold"
+                : ""
             } cursor-pointer hover:underline pb-2 hover:duration-300`}
           >
             Login
@@ -233,7 +254,9 @@ const Navbar = () => {
         <Link onClick={openClose} to={"/register"}>
           <h1
             className={`${
-              location.pathname === "/register" ? " underline text-black font-bold" : ""
+              location.pathname === "/register"
+                ? " underline text-black font-bold"
+                : ""
             } cursor-pointer hover:underline pb-2 hover:duration-300`}
           >
             Register
@@ -244,7 +267,9 @@ const Navbar = () => {
             onClick={openClose}
             to={"/privacy"}
             className={`${
-              location.pathname === "/privacy" ? " underline text-black font-bold" : ""
+              location.pathname === "/privacy"
+                ? " underline text-black font-bold"
+                : ""
             } cursor-pointer hover:underline hover:duration-300`}
           >
             Privacy Policy
@@ -253,7 +278,9 @@ const Navbar = () => {
             onClick={openClose}
             to={"/terms"}
             className={`${
-              location.pathname === "/terms" ? " underline text-black font-bold" : ""
+              location.pathname === "/terms"
+                ? " underline text-black font-bold"
+                : ""
             } cursor-pointer hover:underline hover:duration-300`}
           >
             Terms and Conditions

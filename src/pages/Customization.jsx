@@ -2,6 +2,7 @@ import React from "react";
 import shop5 from "../assets/shop5.webp";
 import shop2 from "../assets/shop2.webp";
 import shop1 from "../assets/shop1.webp";
+import { Link } from "react-router-dom";
 
 
 const Customization = () => {
@@ -22,9 +23,9 @@ const Customization = () => {
               they race through the streets, their engines roaring, leaving a
               trail of awe and excitement behind them.
             </h1>
-            <button className=" text-white bg-black w-max px-8 py-3 hover:scale-105 duration-500 ">
+            <Link to={"/book"} className=" text-white bg-black w-max px-8 py-3 hover:scale-105 duration-500 ">
               REDEEM NOW
-            </button>{" "}
+            </Link>{" "}
           </div>
         </div>
         {/* black */}
@@ -41,9 +42,9 @@ const Customization = () => {
               with reckless abandon, pushing themselves to the limit and leaving
               a trail of excitement and danger in their wake.
             </h1>
-            <button className=" text-white bg-black w-max px-8 py-3 hover:scale-105 duration-500 ">
+            <Link to={"/book"} className=" text-white bg-black w-max px-8 py-3 hover:scale-105 duration-500 ">
               REDEEM NOW
-            </button>{" "}
+            </Link>{" "}
           </div>
           <img className=" flex-1 md:flex  hidden" src={shop1} alt="" />
         </div>
@@ -61,9 +62,9 @@ const Customization = () => {
               their machines to the limit, weaving through traffic and leaving a
               trail of excitement and awe in their wake.
             </h1>
-            <button className=" text-white bg-black w-max px-8 py-3 hover:scale-105 duration-500 ">
+            <Link to={"/book"} className=" text-white bg-black w-max px-8 py-3 hover:scale-105 duration-500 ">
               REDEEM NOW
-            </button>{" "}
+            </Link>{" "}
           </div>
         </div>
       </div>

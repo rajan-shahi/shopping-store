@@ -30,7 +30,7 @@ const Navbar = () => {
         <span
           className={`${
             location.pathname === "/" ? " underline font-bold" : ""
-          } md:flex hidden cursor-pointer text-white font-bold hover:underline hover:duration-300`}
+          } cursor-pointer text-white font-bold hover:underline hover:duration-300`}
         >
           <Link to={"/"}>
             <h1>SHOPPING-STORE</h1>
@@ -73,7 +73,6 @@ const Navbar = () => {
           </Link>
           <Link to={"/excu"}>
             <h1
-              c
               className={`${
                 location.pathname === "/excu" ? " underline font-bold" : ""
               } md:flex hidden cursor-pointer hover:underline hover:duration-300`}
@@ -147,7 +146,9 @@ const Navbar = () => {
           <Link onClick={openClose} to={"/"}>
             <h1
               className={`${
-                location.pathname === "/" ? " text-black font-bold" : ""
+                location.pathname === "/"
+                  ? " text-black font-bold underline"
+                  : ""
               } cursor-pointer hover:underline hover:duration-300`}
             >
               Home
@@ -155,8 +156,8 @@ const Navbar = () => {
           </Link>
           <Link onClick={openClose} to={"/shop"}>
             <h1
-              className={`${
-                location.pathname === "/shop" ? " text-black font-bold" : ""
+              className={`${ 
+                location.pathname === "/shop" ? " underline text-black font-bold" : ""
               } cursor-pointer hover:underline hover:duration-300`}
             >
               Shop
@@ -165,7 +166,7 @@ const Navbar = () => {
           <Link onClick={openClose} to={"/excu"}>
             <h1
               className={`${
-                location.pathname === "/excu" ? " text-black font-bold" : ""
+                location.pathname === "/excu" ? " underline text-black font-bold" : ""
               } cursor-pointer hover:underline hover:duration-300`}
             >
               Exclusive
@@ -174,7 +175,7 @@ const Navbar = () => {
           <Link onClick={openClose} to={"/cust"}>
             <h1
               className={`${
-                location.pathname === "/cust" ? " text-black font-bold" : ""
+                location.pathname === "/cust" ? " underline text-black font-bold" : ""
               } cursor-pointer hover:underline hover:duration-300`}
             >
               Customization
@@ -183,7 +184,7 @@ const Navbar = () => {
           <Link onClick={openClose} to={"/contact"}>
             <h1
               className={`${
-                location.pathname === "/contact" ? " text-black font-bold" : ""
+                location.pathname === "/contact" ? " underline text-black font-bold" : ""
               } cursor-pointer hover:underline hover:duration-300`}
             >
               Contact
@@ -193,7 +194,7 @@ const Navbar = () => {
           <Link onClick={openClose} to={"/about"}>
             <h1
               className={`${
-                location.pathname === "/about" ? " text-black font-bold" : ""
+                location.pathname === "/about" ? "underline text-black font-bold" : ""
               } cursor-pointer hover:underline hover:duration-300`}
             >
               About Us
@@ -203,7 +204,7 @@ const Navbar = () => {
           <Link onClick={openClose} to={"/book"}>
             <h1
               className={`${
-                location.pathname === "/book" ? " text-black font-bold" : ""
+                location.pathname === "/book" ? " underline text-black font-bold" : ""
               } cursor-pointer hover:underline hover:duration-300`}
             >
               Booking
@@ -213,7 +214,7 @@ const Navbar = () => {
         <Link onClick={openClose} to={"/profile"}>
           <h1
             className={`${
-              location.pathname === "/profile" ? " text-black font-bold" : ""
+              location.pathname === "/profile" ? " underline text-black font-bold" : ""
             } cursor-pointer hover:underline hover:duration-300 py-2`}
           >
             Profile
@@ -222,7 +223,7 @@ const Navbar = () => {
         <Link onClick={openClose} to={"/login"}>
           <h1
             className={`${
-              location.pathname === "/login" ? " text-black font-bold" : ""
+              location.pathname === "/login" ? " underline text-black font-bold" : ""
             } cursor-pointer hover:underline pb-2 hover:duration-300`}
           >
             Login
@@ -232,7 +233,7 @@ const Navbar = () => {
         <Link onClick={openClose} to={"/register"}>
           <h1
             className={`${
-              location.pathname === "/register" ? " text-black font-bold" : ""
+              location.pathname === "/register" ? " underline text-black font-bold" : ""
             } cursor-pointer hover:underline pb-2 hover:duration-300`}
           >
             Register
@@ -243,7 +244,7 @@ const Navbar = () => {
             onClick={openClose}
             to={"/privacy"}
             className={`${
-              location.pathname === "/privacy" ? " text-black font-bold" : ""
+              location.pathname === "/privacy" ? " underline text-black font-bold" : ""
             } cursor-pointer hover:underline hover:duration-300`}
           >
             Privacy Policy
@@ -252,7 +253,7 @@ const Navbar = () => {
             onClick={openClose}
             to={"/terms"}
             className={`${
-              location.pathname === "/terms" ? " text-black font-bold" : ""
+              location.pathname === "/terms" ? " underline text-black font-bold" : ""
             } cursor-pointer hover:underline hover:duration-300`}
           >
             Terms and Conditions

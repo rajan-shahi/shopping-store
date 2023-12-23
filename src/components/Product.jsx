@@ -29,16 +29,18 @@ const Product = () => {
                   {Product.iconP}
                 </span>
                 <Link to={"/book"}>
-                <span className=" flex bg-black text-white font-bold p-1 hover:scale-110  duration-500 rounded  cursor-pointer">
-                  {Product.iconE}
-                </span></Link>
+                  <span className=" flex bg-black text-white font-bold p-1 hover:scale-110  duration-500 rounded  cursor-pointer">
+                    {Product.iconE}
+                  </span>
+                </Link>
               </div>
               <img className=" " src={Product.img} alt="" />
               <div className=" flex flex-col justify-center items-center">
                 <Link to={"/book"}>
-                <h1 className="md:text-xl font-bold  hover:border-b-2  hover:border-black border-b-2 border-transparent duration-500 cursor-pointer">
-                  {Product.name}
-                </h1></Link>
+                  <h1 className="md:text-xl font-bold  hover:border-b-2  hover:border-black border-b-2 border-transparent duration-500 cursor-pointer">
+                    {Product.name}
+                  </h1>
+                </Link>
                 <h1 className=" text-md hover:border-b-2  hover:border-black border-b-2 border-transparent duration-500 cursor-pointer">
                   {Product.price}
                 </h1>

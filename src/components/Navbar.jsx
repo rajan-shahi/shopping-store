@@ -10,7 +10,6 @@ import shop6 from "../assets/shop6.webp";
 import { RiDeleteBinLine } from "react-icons/ri";
 import shop1 from "../assets/shop1.webp";
 
-
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const openClose = () => {
@@ -375,8 +374,14 @@ const Navbar = () => {
             </div>
           </div>
           <div className="   md:pt-72 pt-28">
-            <Link onClick={rightnavOpenClose} to={"/buy"} className=" hover:scale-105 duration-500  bg-black text-white md:px-28 px-32 py-3">CHECK OUT</Link>
-            </div>{" "}
+            <Link
+              onClick={rightnavOpenClose}
+              to={"/buy"}
+              className=" hover:scale-105 duration-500  bg-black text-white md:px-28 px-32 py-3"
+            >
+              CHECK OUT
+            </Link>
+          </div>{" "}
         </div>
       </div>
     </div>

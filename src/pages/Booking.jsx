@@ -21,6 +21,11 @@ const Booking = () => {
     setCount(count - 1);
   };
 
+  const [done, setDone] = useState(false);
+  const doneSucess = () => {
+    setDone(!done);
+  };
+
   return (
     <div className=" flex justify-center">
       <div className="md:flex md:px-0 px-4 justify-between md:w-11/12 w-full">
@@ -79,8 +84,11 @@ const Booking = () => {
             awe and excitement behind them.
           </span>
           <div className=" flex gap-5 md:pt-0 pt-4">
-            <button className=" w-full flex-1 bg-black text-white py-2 hover:scale-105 hover:duration-500">
-              ADD TO CARD
+            <button
+              onClick={doneSucess}
+              className=" w-full flex-1 bg-black text-white py-2 hover:scale-105 hover:duration-500"
+            >
+              ADD TO CART
             </button>
 
             <Link
@@ -89,6 +97,11 @@ const Booking = () => {
             >
               BUY NOW
             </Link>
+          </div>
+          <div  onClick={doneSucess} className="  text-2xl text-green-600">
+            {" "}
+            {done && " Success Added To Cart"}
+           
           </div>
         </div>
       </div>

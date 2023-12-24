@@ -9,6 +9,7 @@ import { PiShoppingCart } from "react-icons/pi";
 import shop6 from "../assets/shop6.webp";
 import { RiDeleteBinLine } from "react-icons/ri";
 import shop1 from "../assets/shop1.webp";
+import toast from "react-hot-toast";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -33,6 +34,10 @@ const Navbar = () => {
 
   const location = useLocation();
   console.log(location.pathname);
+
+  const HandleNavbar = () => {
+    toast.success("Items Remove Success");
+  };
 
   return (
     <div className=" flex  justify-center fixed left-0 right-0 top-0  z-10 bg-black">
@@ -346,7 +351,10 @@ const Navbar = () => {
                 <h1 className=" text-xl">7512</h1>
               </h1>
             </div>
-            <div className=" text-red-500 cursor-pointer">
+            <div
+              onClick={HandleNavbar}
+              className=" text-red-500 cursor-pointer"
+            >
               <RiDeleteBinLine size={20} />
             </div>
           </div>
@@ -369,7 +377,7 @@ const Navbar = () => {
                 <h1 className=" text-xl">3690</h1>
               </h1>
             </div>
-            <div className=" text-red-500 cursor-pointer">
+            <div onClick={HandleNavbar} className=" text-red-500 cursor-pointer">
               <RiDeleteBinLine size={20} />
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import shop6 from "../assets/shop6.webp";
 import { LuMoveLeft } from "react-icons/lu";
@@ -7,10 +7,22 @@ import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 
 const Buy = () => {
-
-  const haldleBuy =()=>{
+  const haldleBuy = () => {
     toast.success("OTP Send Sucess");
-  }
+  };
+
+  const deleteSuccess = () => {
+    toast.success("Items Remove Success");
+  };
+
+  const [count, setCount] = useState(1);
+  const increase = () => {
+    setCount(count + 1);
+  };
+
+  const decrease = () => {
+    setCount(count - 1);
+  };
   return (
     <div className=" flex justify-center">
       {/* container */}
@@ -36,7 +48,10 @@ const Buy = () => {
             <h1>OR CONTINUE HERE</h1>
             <h1 className=" md:text-md text-sm text-gray-600">
               Already have an account{" "}
-              <Link to={"/login"} className=" cursor-pointer underline text-blue-600 md:text-xl px-1">
+              <Link
+                to={"/login"}
+                className=" cursor-pointer underline text-blue-600 md:text-xl px-1"
+              >
                 Login
               </Link>
             </h1>
@@ -67,14 +82,15 @@ const Buy = () => {
               placeholder=" Last Name"
             />
           </div>
-          <input min={0}
+          <input
+            min={0}
             className=" border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             name="number"
             type="number"
             placeholder="Phone"
           />
           <div className=" flex justify-between gap-3">
-            <input 
+            <input
               className="   w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
               type="text"
               placeholder=" Tole/City"
@@ -92,7 +108,10 @@ const Buy = () => {
               placeholder="Notes"
             />
           </div>
-          <button onClick={haldleBuy} className=" bg-black py-3 text-white hover:scale-y-105 hover:duration-500">
+          <button
+            onClick={haldleBuy}
+            className=" bg-black py-3 text-white hover:scale-y-105 hover:duration-500"
+          >
             VERYFY PHONE NUMBER
           </button>
           <div className="  flex justify-center md:pt-9 pt-5">
@@ -100,7 +119,8 @@ const Buy = () => {
               Verify your phone number,Check your phone for verification code.
             </h1>
           </div>
-          <input min={0}
+          <input
+            min={0}
             className=" border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             type="number"
             placeholder="Enter OTP"
@@ -123,16 +143,23 @@ const Buy = () => {
                 <h1 className=" text-md text-black">Bomber Jacket</h1>
                 <h1 className=" flex gap-5">
                   <h1 className=" text-gray-600">Qty</h1>
-                  <h1 className=" cursor-pointer">-</h1>
-                  <h1 className=" text-black font-bold text-xl">5</h1>
-                  <h1 className=" cursor-pointer">+</h1>
+                  <h1 onClick={decrease} className=" cursor-pointer">
+                    -
+                  </h1>
+                  <h1 className=" text-black font-bold text-xl">{count}</h1>
+                  <h1 onClick={increase} className=" cursor-pointer">
+                    +
+                  </h1>
                 </h1>
                 <h1 className=" flex gap-7">
                   <h1 className=" text-sm text-gray-600">Price</h1>
-                  <h1>970</h1>
+                  <h1>{970 * count}</h1>
                 </h1>
               </span>
-              <span className=" text-red-600 cursor-pointer">
+              <span
+                onClick={deleteSuccess}
+                className=" text-red-600 cursor-pointer"
+              >
                 <RiDeleteBin6Line />
               </span>
             </div>
@@ -174,13 +201,18 @@ const Buy = () => {
             <h1>Grand Total :</h1>
             <h1>1420</h1>
           </div>
-          <Link to={"/profile"} className=" flex hover:scale-y-105 duration-700 justify-center items-center gap-2 w-full bg-black text-white  py-2">
+          <Link
+            to={"/profile"}
+            className=" flex hover:scale-y-105 duration-700 justify-center items-center gap-2 w-full bg-black text-white  py-2"
+          >
             <LuMoveLeft className=" bg-blue-600 text-white  rounded-sm cursor-pointer" />
             <button className="">EDIT SHIPPING ADDRESS</button>
           </Link>
           <div className=" flex hover:scale-y-105 duration-700 justify-center items-center gap-2 w-full bg-black text-white  py-2">
-            <Link to={"/book"} className="">CHECK-OUT</Link>
-            <MdArrowRightAlt className=" bg-blue-600 text-white  rounded-sm cursor-pointer"/> 
+            <Link to={"/book"} className="">
+              CHECK-OUT
+            </Link>
+            <MdArrowRightAlt className=" bg-blue-600 text-white  rounded-sm cursor-pointer" />
           </div>
         </div>
       </div>

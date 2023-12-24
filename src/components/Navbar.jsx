@@ -39,6 +39,24 @@ const Navbar = () => {
     toast.success("Items Remove Success");
   };
 
+  const [count, setCount] = useState(5);
+  const [count2, setCount2] = useState(4);
+  const increase = () => {
+    setCount(count + 1);
+  };
+
+  const decrease = () => {
+    setCount(count - 1);
+  };
+
+  const increase2 = () => {
+    setCount2(count2 + 1);
+  };
+
+  const decrease2 = () => {
+    setCount2(count2 - 1);
+  };
+
   return (
     <div className=" flex  justify-center fixed left-0 right-0 top-0  z-10 bg-black">
       <div className=" flex justify-between w-full md:px-0 px-4  md:w-11/12  py-5 items-center ">
@@ -342,13 +360,17 @@ const Navbar = () => {
               <h1 className=" text-xl text-gray-800">Bomber Jacket</h1>
               <span className=" flex gap-4">
                 <h1 className=" text-gray-600">Qty</h1>
-                <h1 className=" cursor-pointer">-</h1>
-                <h1 className=" text-xl ">5</h1>
-                <h1 className=" cursor-pointer">+</h1>
+                <h1 onClick={decrease} className=" cursor-pointer">
+                  -
+                </h1>
+                <h1 className=" text-xl ">{count}</h1>
+                <h1 onClick={increase} className=" cursor-pointer">
+                  +
+                </h1>
               </span>
               <h1 className=" flex gap-5">
                 <h1 className=" text-gray-600">Price</h1>
-                <h1 className=" text-xl">7512</h1>
+                <h1 className=" text-xl">{count * 1502}</h1>
               </h1>
             </div>
             <div
@@ -368,16 +390,23 @@ const Navbar = () => {
               <h1 className=" text-xl text-gray-800">Bomber Jacket</h1>
               <span className=" flex gap-4">
                 <h1 className=" text-gray-600">Qty</h1>
-                <h1 className=" cursor-pointer">-</h1>
-                <h1 className=" text-xl ">4</h1>
-                <h1 className=" cursor-pointer">+</h1>
+                <h1  onClick={decrease2} className=" cursor-pointer">
+                  -
+                </h1>
+                <h1 className=" text-xl ">{count2}</h1>
+                <h1 onClick={decrease2} className=" cursor-pointer">
+                  +
+                </h1>
               </span>
               <h1 className=" flex gap-5">
                 <h1 className=" text-gray-600">Price</h1>
-                <h1 className=" text-xl">3690</h1>
+                <h1 className=" text-xl">{950 * count2}</h1>
               </h1>
             </div>
-            <div  onClick={HandleNavbar} className=" text-red-500 cursor-pointer">
+            <div
+              onClick={HandleNavbar}
+              className=" text-red-500 cursor-pointer"
+            >
               <RiDeleteBinLine size={20} />
             </div>
           </div>

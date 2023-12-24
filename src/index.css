@@ -1,13 +1,19 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* 
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev::after {
   content: "next";
-  color: red;
-}; */
+  color: gray;
+}
 
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: gray;
+  line-height: 100;
+}
 
+.swiper-pagination-bullet-active {
+  background-color: gray;
+}

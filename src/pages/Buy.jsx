@@ -67,15 +67,15 @@ const Buy = () => {
               placeholder=" Last Name"
             />
           </div>
-          <input
+          <input min={0}
             className=" border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             name="number"
             type="number"
             placeholder="Phone"
           />
           <div className=" flex justify-between gap-3">
-            <input
-              className="  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+            <input 
+              className="   w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
               type="text"
               placeholder=" Tole/City"
             />
@@ -100,7 +100,7 @@ const Buy = () => {
               Verify your phone number,Check your phone for verification code.
             </h1>
           </div>
-          <input
+          <input min={0}
             className=" border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             type="number"
             placeholder="Enter OTP"

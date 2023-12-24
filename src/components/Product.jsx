@@ -13,9 +13,9 @@ import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 
 const Product = () => {
-  const handleProduct = () => {
-    toast.success("Added To Cart");
-  };
+const handleProduct =()=>{
+  toast.success("Added To Cart")
+}
   return (
     <div className=" flex  md:px-0 px-4 justify-center md:py-28 py-16">
       <div className=" flex flex-col w-full md:w-11/12">
@@ -29,10 +29,7 @@ const Product = () => {
               className=" group hover:border duration-300 hover:border-gray-200 relative border border-transparent rounded-md py-2"
             >
               <div className=" flex flex-col absolute pt-4 ml-64 group-hover:opacity-100 opacity-0  gap-2 text-2xl object-cover">
-                <span
-                  onClick={handleProduct}
-                  className=" flex bg-black text-white font-bold p-1 hover:scale-110 duration-500 rounded cursor-pointer"
-                >
+                <span onClick={handleProduct} className=" flex bg-black text-white font-bold p-1 hover:scale-110 duration-500 rounded cursor-pointer">
                   {Product.iconP}
                 </span>
                 <Link to={"/book"}>

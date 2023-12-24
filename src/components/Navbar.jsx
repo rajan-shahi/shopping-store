@@ -104,7 +104,7 @@ const Navbar = () => {
             onClick={rightnavOpenClose}
             className=" text-white font-bold md:pr-0 pr-3"
           >
-            <PiShoppingCart size={25} className=" cursor-pointer" />
+            <PiShoppingCart size={25} className="cursor-pointer" />
           </span>
           <IoPeople
             onClick={profileOpenClose}
@@ -377,7 +377,7 @@ const Navbar = () => {
                 <h1 className=" text-xl">3690</h1>
               </h1>
             </div>
-            <div onClick={HandleNavbar} className=" text-red-500 cursor-pointer">
+            <div  onClick={HandleNavbar} className=" text-red-500 cursor-pointer">
               <RiDeleteBinLine size={20} />
             </div>
           </div>

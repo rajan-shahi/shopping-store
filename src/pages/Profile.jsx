@@ -1,12 +1,21 @@
 import React, { useState } from "react";
 import rajan from "../assets/rajan.jpg";
 import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const Profile = () => {
   const [edit, setEdit] = useState(true);
   const openclose = () => {
     setEdit(!edit);
   };
+
+  const haldleProfile = () => {
+    toast.success("Success Edit Profile");
+  };
+
+  const handleLogOut =()=>{
+    toast.success("Logout Success")
+  }
   return (
     <div className=" flex justify-center">
       <div className=" flex  md:pt-24 pt-16 md:pb-10 flex-col gap-20 w-full md:px-0 px-4 md:w-10/12">
@@ -22,12 +31,9 @@ const Profile = () => {
               Hello , Rajan Bahadur Shahi.
             </h1>
             <div className=" flex gap-5">
-              <Link
-                to={"/buy"}
-                className=" hover:scale-105 duration-500 bg-black text-white px-6 py-1"
-              >
+              <button onClick={handleLogOut} className=" hover:scale-105 duration-500 bg-black text-white px-6 py-1">
                 LOGOUT
-              </Link>
+              </button>
               <button
                 onClick={openclose}
                 className=" relative  hover:scale-105 duration-500 bg-black text-white px-6 py-1"
@@ -92,18 +98,18 @@ const Profile = () => {
                 >
                   Close
                 </Link>
-                <button className=" w-full bg-black text-white py-1">
+                <button
+                  onClick={haldleProfile}
+                  className=" w-full bg-black text-white py-1"
+                >
                   UPDATE
                 </button>
               </div>
-              
             </div>
           </div>
         )}
-        
       </div>
     </div>
-    
   );
 };
 

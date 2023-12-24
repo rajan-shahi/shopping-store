@@ -4,8 +4,13 @@ import shop6 from "../assets/shop6.webp";
 import { LuMoveLeft } from "react-icons/lu";
 import { MdArrowRightAlt } from "react-icons/md";
 import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const Buy = () => {
+
+  const haldleBuy =()=>{
+    toast.success("OTP Send Sucess");
+  }
   return (
     <div className=" flex justify-center">
       {/* container */}
@@ -87,7 +92,7 @@ const Buy = () => {
               placeholder="Notes"
             />
           </div>
-          <button className=" bg-black py-3 text-white hover:scale-y-105 hover:duration-500">
+          <button onClick={haldleBuy} className=" bg-black py-3 text-white hover:scale-y-105 hover:duration-500">
             VERYFY PHONE NUMBER
           </button>
           <div className="  flex justify-center md:pt-9 pt-5">

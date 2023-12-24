@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   const handleLogin=()=>{
-    toast.error("Login Success")
+    toast.success("Login Success")
 
   }
   return (

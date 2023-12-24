@@ -1,7 +1,12 @@
 import React from "react";
+import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 
 const Login = () => {
+  const handleLogin=()=>{
+    toast.error("Login Success")
+
+  }
   return (
     <div className=" flex justify-center">
       <div className=" md:flex md:px-0 px-4 justify-between gap-10 w-full md:w-10/12 md:py-24 py-12">
@@ -47,7 +52,7 @@ const Login = () => {
             </h1>
             <h1 className=" cursor-pointer underline">Login via Email</h1>
           </div>
-          <button className=" bg-black text-white py-2 hover:scale-y-105 duration-500 ">
+          <button onClick={handleLogin} className=" bg-black text-white py-2 hover:scale-y-105 duration-500 ">
             LOGIN
           </button>
         </div>

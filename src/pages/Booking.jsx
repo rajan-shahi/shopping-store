@@ -61,7 +61,7 @@ const Booking = () => {
             <span className="  bg-blue-700 h-5 w-5 cursor-pointer"></span>
             <span className=" bg-gray-700 h-5 w-5 cursor-pointer"></span>
           </div>
-          <h1 className=" md:text-3xl  text-2xl text-black">NPR. 3700</h1>
+          <h1 className=" md:text-3xl  text-2xl text-black">NPR. {3700 * count} </h1>
           <span className=" flex  gap-4 items-center">
             <h1 className=" text-xl  text-black">Qty: </h1>
             <h1 onClick={decrease} className=" text-xl cursor-pointer">
@@ -98,10 +98,9 @@ const Booking = () => {
               BUY NOW
             </Link>
           </div>
-          <div  onClick={doneSucess} className="  text-2xl text-green-600">
+          <div onClick={doneSucess} className="  text-2xl text-green-600">
             {" "}
             {done && " Success Added To Cart"}
-           
           </div>
         </div>
       </div>

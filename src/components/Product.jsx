@@ -12,6 +12,7 @@ import { IoEyeOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const Product = () => {
+
   return (
     <div className=" flex  md:px-0 px-4 justify-center md:py-28 py-16">
       <div className=" flex flex-col w-full md:w-11/12">

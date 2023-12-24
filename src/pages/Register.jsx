@@ -18,7 +18,7 @@ const Register = () => {
             placeholder="Last Name"
           />
           <input
-            className="  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+            className="px-2  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             type="email"
             name="email"
             placeholder="Email Address"

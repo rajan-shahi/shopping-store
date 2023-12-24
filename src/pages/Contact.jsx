@@ -51,8 +51,11 @@ const Contact = () => {
               placeholder="Phone NUmber"
             />{" "}
             <textarea className="  w-full border border-gray-300 py-2 h-[300px] "></textarea>
-            <button className=" w-full bg-black  flex justify-center text-white py-2 hover:scale-y-105 duration-500 ">
-             Submit
+            <button
+              type="submit"
+              className=" w-full bg-black  flex justify-center text-white py-2 hover:scale-y-105 duration-500 "
+            >
+              Submit
             </button>
           </div>
         </div>

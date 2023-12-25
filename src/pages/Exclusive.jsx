@@ -37,8 +37,8 @@ const Exclusive = () => {
           <img className=" md:w-3/12" src={w4} alt="" />
           <img className=" md:w-4/12" src={w2} alt="" />
         </div>
-        <div className=" md:hidden flex">
-          <Link to={"/book"}  className=" bg-black w-full text-white  py-2">BOOK NOW</Link>
+        <div className=" md:hidden flex ">
+          <Link to={"/book"}  className=" flex justify-center bg-black w-full text-white  py-2">BOOK NOW</Link>
         </div>
       </div>
     </div>

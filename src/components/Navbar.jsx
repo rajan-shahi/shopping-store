@@ -347,7 +347,7 @@ const Navbar = () => {
       >
         <span className=" py-6 flex justify-between border-b border-gray-300 px-5">
           <h1 className=" text-2xl  text-black">My Cart</h1>
-          <AiOutlineClose size={25} className="" onClick={rightnavOpenClose} />
+          <AiOutlineClose size={25} className="  cursor-pointer" onClick={rightnavOpenClose} />
         </span>
         <div className=" flex flex-col gap-8 py-6">
           <div className="flex py-3 px-4 justify-between border  border-gray-300">

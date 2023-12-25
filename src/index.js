@@ -3,19 +3,12 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { Helmet } from "react-helmet";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <div>
-    {" "}
-    <Helmet>
-      <title>Shopping Store</title>
-    </Helmet>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </div>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

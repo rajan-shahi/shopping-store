@@ -16,15 +16,10 @@ import About from "./pages/About";
 import Terms from "./pages/Terms";
 import Contact from "./pages/Contact";
 import { Toaster } from "react-hot-toast";
-import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <div className=" overflow-x-hidden">
-      <Helmet>
-        <title>Hello rajan</title>
-        <description>I am rajan bahadur shahi</description>
-      </Helmet>
       <BrowserRouter>
         <Navbar />
         <div className=" md:py-10 py-14">

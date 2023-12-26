@@ -8,7 +8,7 @@ const Customization = () => {
     <div className=" flex justify-center">
       <div className="flex flex-col md:gap-0 gap-5 w-full md:px-0 px-4  md:w-10/12 justify-center items-center">
         {/* white */}
-        <div className=" md:flex justify-start items-center">
+        <div className=" md:flex  justify-start items-center">
           <img
             data-aos-duration="2000"
             data-aos="fade-up"

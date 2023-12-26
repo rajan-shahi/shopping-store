@@ -13,16 +13,16 @@ const Profile = () => {
     toast.success("Success Edit Profile");
   };
 
-  const handleLogOut =()=>{
-    toast.success("Logout Success")
-  }
+  const handleLogOut = () => {
+    toast.success("Logout Success");
+  };
   return (
     <div className=" flex justify-center">
       <div className=" flex  md:pt-24 pt-16 md:pb-10 flex-col gap-20 w-full md:px-0 px-4 md:w-10/12">
         {/* profile */}
         <div className="md:flex items-center gap-10">
           <img
-            className=" h-32 w-32 cursor-pointer rounded-full px-2 flex object-cover"
+            className=" h-32 w-32  cursor-pointer rounded-full  flex object-cover"
             src={rajan}
             alt=""
           />
@@ -31,7 +31,10 @@ const Profile = () => {
               Hello , Rajan Bahadur Shahi.
             </h1>
             <div className=" flex gap-5">
-              <button onClick={handleLogOut} className=" hover:scale-105 duration-500 bg-black text-white px-6 py-1">
+              <button
+                onClick={handleLogOut}
+                className=" hover:scale-105 duration-500 bg-black text-white px-6 py-1"
+              >
                 LOGOUT
               </button>
               <button
@@ -70,7 +73,7 @@ const Profile = () => {
               <h1 className=" flex justify-center text-xl text-gray-600">
                 UPDATE YOUR INFORMATION
               </h1>
-              <input 
+              <input
                 className="  outline-black  px-2 border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
                 type="text"
                 placeholder="Full Name"

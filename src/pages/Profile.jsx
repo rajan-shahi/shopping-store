@@ -75,18 +75,18 @@ const Profile = () => {
                 UPDATE YOUR INFORMATION
               </h1>
               <input
-                className="  outline-black  px-2 border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+                className="  outline-black  px-2 border border-gray-300 py-2  placeholder:text-gray-700"
                 type="text"
                 placeholder="Full Name"
               />
               <input
-                className="  outline-black  px-2 border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+                className="  outline-black  px-2 border border-gray-300 py-2  placeholder:text-gray-700"
                 type="email"
                 name="email"
                 placeholder="Email"
               />
               <input
-                className="   outline-black px-2 border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+                className="   outline-black px-2 border border-gray-300 py-2  placeholder:text-gray-700"
                 type="number"
                 placeholder="Phone Number"
               />

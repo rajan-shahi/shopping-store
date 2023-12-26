@@ -48,19 +48,19 @@ const Login = () => {
             </h1>
             <div className=" flex flex-col gap-3 py-3">
               <input
-                className="  outline-black border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+                className=" px-2  outline-black border border-gray-300 py-2  placeholder:text-gray-700"
                 name="email"
                 type="email"
                 placeholder="Enter Email Address"
               />
               <input
-                className="  outline-black px-2 border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+                className="  outline-black px-2 border border-gray-300 py-2  placeholder:text-gray-700"
                 name="number"
                 type="number"
                 placeholder="Enter Phone Number"
               />
               <input
-                className="  px-2 outline-black border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+                className="  px-2 outline-black border border-gray-300 py-2  placeholder:text-gray-700"
                 type="password"
                 placeholder="Pasword"
               />{" "}
@@ -86,7 +86,7 @@ const Login = () => {
             <h1 className=" border-b border-gray-300 py-4 text-md  text-black font-bold">RESET PASSWORD</h1>
             <h2>Enter your email or phone number to reset your password.</h2>
             <input
-                className="  outline-black px-2 border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+                className="  outline-black px-2 border border-gray-300 py-2  placeholder:text-gray-700"
                 name="number"
                 type="number"
                 placeholder="Enter Phone Number"

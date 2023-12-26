@@ -35,18 +35,18 @@ const Contact = () => {
           </h1>
           <div className=" flex flex-col gap-6">
             <input
-              className=" px-2 outline-black  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+              className=" px-2 outline-black  w-full border border-gray-300 py-2 placeholder:text-gray-700"
               type="text"
               placeholder="Full Name"
             />{" "}
             <input
-              className=" px-2 outline-black w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+              className=" px-2 outline-black w-full border border-gray-300 py-2 placeholder:text-gray-700"
               type="email"
               name="email"
               placeholder="Email Address"
             />{" "}
             <input
-              className=" px-2 outline-black  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+              className=" px-2 outline-black  w-full border border-gray-300 py-2 placeholder:text-gray-700"
               type="Number"
               placeholder="Phone NUmber"
             />{" "}

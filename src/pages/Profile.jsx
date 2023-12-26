@@ -16,13 +16,14 @@ const Profile = () => {
   const handleLogOut = () => {
     toast.success("Logout Success");
   };
+
   return (
-    <div className=" flex justify-center">
-      <div className=" flex  md:pt-24 pt-16 md:pb-10 flex-col gap-20 w-full md:px-0 px-4 md:w-10/12">
+    <div className=" h-[100vh] flex justify-center">
+      <div className=" flex  md:pt-24 pt-16 md:pb-10 flex-col gap-10 w-full md:px-0 px-4 md:w-10/12">
         {/* profile */}
         <div className="md:flex items-center gap-10">
           <img
-            className=" h-32 w-32  cursor-pointer rounded-full  flex object-cover"
+            className=" h-32 w-32 cursor-pointer rounded-full  flex object-cover"
             src={rajan}
             alt=""
           />
@@ -48,7 +49,7 @@ const Profile = () => {
         </div>
         {/* contact */}
         <div className=" flex flex-col">
-          <h1 className=" text-3xl py-5">PROFILE</h1>
+          <h1 className=" text-3xl py-3">PROFILE</h1>
           <div className=" flex md:gap-40 gap-16 border-b border-gray-300 py-3 text-gray-700">
             <h1 className=" text-md">Full Name</h1>
             <h2 className=" text-md">Rajan Bahadur Shahi</h2>

@@ -12,7 +12,7 @@ const Customization = () => {
           <img
             data-aos-duration="2000"
             data-aos="fade-up"
-            className=" flex-1"
+            className="lex-1"
             src={shop5}
             alt=""
           />

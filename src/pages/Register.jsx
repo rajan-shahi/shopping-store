@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
-    <div className=" flex justify-center">
+    <div className=" h-[100vh] flex justify-center">
       <div className=" flex flex-col md:px-0 px-4 w-full md:w-10/12 md:py-24  pt-16 md:pb-20 pb-1  gap-4">
         <h1 className="  border-b border-gray-300 pb-4">CREATE ACCOUNT</h1>
         <div className=" grid md:grid-cols-2 gap-4 ">

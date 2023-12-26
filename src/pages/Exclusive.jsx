@@ -15,13 +15,15 @@ const Exclusive = () => {
       <div className=" flex flex-col md:px-0 px-4 w-full md:w-11/12">
         <div className=" md:flex justify-between items-center">
           <img
-            data-aos="fade-down-right"  data-aos-duration="2000"
+            data-aos="fade-down-right"
+            data-aos-duration="2000"
             className=" md:w-5/12"
             src={shop5}
             alt=""
           />
           <div
-            data-aos="fade-up-left" data-aos-duration="2000"
+            data-aos="fade-up-left"
+            data-aos-duration="2000"
             className=" flex flex-col gap-5 md:w-6/12"
           >
             <h1 className=" text-3xl text-gray-800 font-bold">
@@ -46,9 +48,29 @@ const Exclusive = () => {
           </div>
         </div>
         <div className=" md:flex justify-between">
-          <img className=" md:w-4/12" src={w1} alt="" />
-          <img className=" md:w-3/12" src={w4} alt="" />
-          <img className=" md:w-4/12" src={w2} alt="" />
+          <img
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            className=" md:w-4/12"
+            src={w1}
+            alt=""
+          />
+
+          <img
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+            className=" md:w-4/12"
+            src={w2}
+            alt=""
+          />
+          <img
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            className=" md:w-3/12"
+            src={w4}
+            alt=""
+          />
         </div>
         <div className=" md:hidden flex ">
           <Link

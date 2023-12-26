@@ -347,7 +347,11 @@ const Navbar = () => {
       >
         <span className=" py-6 flex justify-between border-b border-gray-300 px-5">
           <h1 className=" text-2xl  text-black">My Cart</h1>
-          <AiOutlineClose size={25} className="  cursor-pointer" onClick={rightnavOpenClose} />
+          <AiOutlineClose
+            size={25}
+            className="  cursor-pointer"
+            onClick={rightnavOpenClose}
+          />
         </span>
         <div className=" flex flex-col gap-8 py-6">
           <div className="flex py-3 px-4 justify-between border  border-gray-300">
@@ -390,7 +394,7 @@ const Navbar = () => {
               <h1 className=" text-xl text-gray-800">Bomber Jacket</h1>
               <span className=" flex gap-4">
                 <h1 className=" text-gray-600">Qty</h1>
-                <h1  onClick={decrease2} className=" cursor-pointer">
+                <h1 onClick={decrease2} className=" cursor-pointer">
                   -
                 </h1>
                 <h1 className=" text-xl ">{count2}</h1>
@@ -410,15 +414,13 @@ const Navbar = () => {
               <RiDeleteBinLine size={20} />
             </div>
           </div>
-          <div className="   md:pt-72 pt-28">
-            <Link
-              onClick={rightnavOpenClose}
-              to={"/buy"}
-              className=" hover:scale-105 duration-500  bg-black text-white md:px-28 px-32 py-3"
-            >
-              CHECK OUT
-            </Link>
-          </div>{" "}
+          <Link
+            to={"/buy"}
+            onClick={rightnavOpenClose}
+            className=" flex justify-center cursor-pointer  py-3 hover:scale-105 duration-500  bg-black text-white"
+          >
+            <button>CHECK OUT</button>
+          </Link>{" "}
         </div>
       </div>
     </div>

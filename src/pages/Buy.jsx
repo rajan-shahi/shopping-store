@@ -57,13 +57,13 @@ const Buy = () => {
             </h1>
           </div>
           <input
-            className=" border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+            className=" px-2 outline-black border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             name="email"
             type="email"
             placeholder="Examples@ Gmail.com"
           />
           <input
-            className=" border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+            className=" px-2 outline-black border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             name="text"
             type="text"
             placeholder="Ktm Outside The Roads"
@@ -71,39 +71,39 @@ const Buy = () => {
           <div className=" md:flex  justify-between gap-3">
             <div className=" flex-1   w-full md:py-0 py-3">
               <input
-                className="  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+                className=" px-2 outline-black  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
                 type="text"
                 placeholder=" First Name"
               />{" "}
             </div>
             <input
-              className=" flex-1 w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+              className="  px-2 outline-black flex-1 w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
               type="text"
               placeholder=" Last Name"
             />
           </div>
           <input
             min={0}
-            className=" border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+            className=" px-2 outline-black border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             name="number"
             type="number"
             placeholder="Phone"
           />
           <div className=" flex justify-between gap-3">
             <input
-              className="   w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+              className=" px-2 outline-black  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
               type="text"
               placeholder=" Tole/City"
             />
             <input
-              className=" w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+              className=" px-2 outline-black w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
               type="text"
               placeholder=" Address"
             />
           </div>
           <div className=" w-full md:pt-7">
             <input
-              className="  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+              className=" px-2 outline-black w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
               type="text"
               placeholder="Notes"
             />
@@ -121,7 +121,7 @@ const Buy = () => {
           </div>
           <input
             min={0}
-            className=" border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+            className=" px-2 outline-black border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             type="number"
             placeholder="Enter OTP"
           />
@@ -172,7 +172,7 @@ const Buy = () => {
 
           <div className=" flex">
             <input
-              className=" border border-gray-300 w-full placeholder:px-2 placeholder:text-black py-2"
+              className=" px-2 outline-black border border-gray-300 w-full placeholder:px-2 placeholder:text-black py-2"
               type="text"
               placeholder="COUPON"
             />

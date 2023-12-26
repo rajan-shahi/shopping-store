@@ -8,33 +8,33 @@ const Register = () => {
         <h1 className="  border-b border-gray-300 pb-4">CREATE ACCOUNT</h1>
         <div className=" grid md:grid-cols-2 gap-4 ">
           <input
-            className=" border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+            className="  outline-black px-2 border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             type="name"
             placeholder="First Name"
           />
           <input
-            className=" border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+            className="  outline-black px-2 border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             type="text"
             placeholder="Last Name"
           />
           <input
-            className="px-2  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+            className="  outline-black px-2  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             type="email"
             name="email"
             placeholder="Email Address"
           />{" "}
           <input
-            className="  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+            className="  outline-black px-2  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             type="number"
             placeholder=" Enter Phone Number"
           />{" "}
           <input
-            className="  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+            className="  outline-black px-2  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             type="password"
             placeholder="Password"
           />{" "}
           <input
-            className="  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+            className="  outline-black px-2 w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
             type="password"
             placeholder="Confirm Password"
           />{" "}

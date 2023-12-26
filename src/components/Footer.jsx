@@ -13,7 +13,7 @@ const Footer = () => {
       <div className=" md:hidden flex  pt-10 justify-center flex-col gap-4">
         <h1 className=" pt-2">Email Address</h1>
         <input
-          className="  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+          className="  outline-black  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
           type="email"
           name="email"
           placeholder="Example@gmail.com"

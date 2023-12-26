@@ -22,7 +22,7 @@ const handleProduct =()=>{
         <div className=" md:text-3xl text-2xl text-black font-bold">
           RANGE EDITION SERIES
         </div>
-        <div className=" grid md:grid-cols-4 sm:grid-cols-3">
+        <div className=" grid sm:grid-cols-3 md:grid-cols-4 ">
           {products.map((Product, index) => (
             <div
               key={index}

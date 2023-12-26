@@ -35,22 +35,22 @@ const Contact = () => {
           </h1>
           <div className=" flex flex-col gap-6">
             <input
-              className="  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+              className=" px-2 outline-black  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
               type="text"
               placeholder="Full Name"
             />{" "}
             <input
-              className="  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+              className=" px-2 outline-black w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
               type="email"
               name="email"
               placeholder="Email Address"
             />{" "}
             <input
-              className="  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
+              className=" px-2 outline-black  w-full border border-gray-300 py-2 placeholder:px-2 placeholder:text-gray-700"
               type="Number"
               placeholder="Phone NUmber"
             />{" "}
-            <textarea className="  w-full border border-gray-300 py-2 h-[300px] "></textarea>
+            <textarea className=" outline-black px-2  w-full border border-gray-300 py-2 h-[300px] "></textarea>
             <button
               type="submit"
               className=" w-full bg-black  flex justify-center text-white py-2 hover:scale-y-105 duration-500 "

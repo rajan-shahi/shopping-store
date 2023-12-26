@@ -1,9 +1,7 @@
-import React from "react";
 import shop5 from "../assets/shop5.webp";
 import shop2 from "../assets/shop2.webp";
 import shop1 from "../assets/shop1.webp";
 import { Link } from "react-router-dom";
-
 
 const Customization = () => {
   return (
@@ -11,8 +9,18 @@ const Customization = () => {
       <div className="flex flex-col md:gap-0 gap-5 w-full md:px-0 px-4  md:w-10/12 justify-center items-center">
         {/* white */}
         <div className=" md:flex justify-start items-center">
-          <img className=" flex-1" src={shop5} alt="" />
-          <div className=" flex flex-col gap-4 flex-1">
+          <img
+            data-aos-duration="2000"
+            data-aos="fade-up"
+            className=" flex-1"
+            src={shop5}
+            alt=""
+          />
+          <div
+            data-aos-duration="2000"
+            data-aos="fade-down"
+            className=" flex flex-col gap-4 flex-1"
+          >
             <h1 className=" md:text-4xl text-3xl text-black/80 font-bold flex-1">
               Speed Demons- White
             </h1>
@@ -23,15 +31,28 @@ const Customization = () => {
               they race through the streets, their engines roaring, leaving a
               trail of awe and excitement behind them.
             </h1>
-            <Link to={"/book"} className=" text-white bg-black w-max px-8 py-3 hover:scale-105 duration-500 ">
+            <Link
+              to={"/book"}
+              className=" text-white bg-black w-max px-8 py-3 hover:scale-105 duration-500 "
+            >
               REDEEM NOW
             </Link>{" "}
           </div>
         </div>
         {/* black */}
         <div className=" md:flex justify-end items-center">
-          <img className=" flex-1 md:hidden flex" src={shop1} alt="" />
-          <div className=" flex flex-col gap-4 flex-1">
+          <img
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            className=" flex-1 md:hidden flex"
+            src={shop1}
+            alt=""
+          />
+          <div
+            data-aos-duration="2000"
+            data-aos="fade-up"
+            className=" flex flex-col gap-4 flex-1"
+          >
             <h1 className=" md:text-4xl text-3xl text-black/80 font-bold flex-1">
               Speed Demons- Black
             </h1>
@@ -42,7 +63,10 @@ const Customization = () => {
               with reckless abandon, pushing themselves to the limit and leaving
               a trail of excitement and danger in their wake.
             </h1>
-            <Link to={"/book"} className=" text-white bg-black w-max px-8 py-3 hover:scale-105 duration-500 ">
+            <Link
+              to={"/book"}
+              className=" text-white bg-black w-max px-8 py-3 hover:scale-105 duration-500 "
+            >
               REDEEM NOW
             </Link>{" "}
           </div>
@@ -50,8 +74,18 @@ const Customization = () => {
         </div>
         {/* green */}
         <div className=" md:flex justify-start items-center">
-          <img className=" flex-1" src={shop2} alt="" />
-          <div className=" flex flex-col gap-4 flex-1">
+          <img
+            data-aos-duration="2000"
+            data-aos="fade-up"
+            className=" flex-1"
+            src={shop2}
+            alt=""
+          />
+          <div
+            data-aos-duration="2000"
+            data-aos="fade-down"
+            className=" flex flex-col gap-4 flex-1"
+          >
             <h1 className=" md:text-4xl text-3xl text-black/80 font-bold flex-1">
               Speed Demons- Green
             </h1>
@@ -62,7 +96,10 @@ const Customization = () => {
               their machines to the limit, weaving through traffic and leaving a
               trail of excitement and awe in their wake.
             </h1>
-            <Link to={"/book"} className=" text-white bg-black w-max px-8 py-3 hover:scale-105 duration-500 ">
+            <Link
+              to={"/book"}
+              className=" text-white bg-black w-max px-8 py-3 hover:scale-105 duration-500 "
+            >
               REDEEM NOW
             </Link>{" "}
           </div>

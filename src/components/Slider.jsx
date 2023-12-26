@@ -31,7 +31,11 @@ const Slider = () => {
                 key={index}
                 className=" md:flex items-center justify-between md:px-14 px-1"
               >
-                <div className=" flex flex-1   flex-col gap-4">
+                <div
+                  data-aos-duration="2000"
+                  data-aos="fade-up"
+                  className=" flex flex-1   flex-col gap-4"
+                >
                   <h1 className=" flex justify-center md:text-3xl text-2xl text-black font-bold">
                     {Ticet.type}
                   </h1>
@@ -39,13 +43,16 @@ const Slider = () => {
                     {Ticet.name}
                   </h2>
                   <Link to="/book">
-                  <div className=" flex justify-center  cursor-pointer  ">
-                    <span className=" bg-black text-white px-8 py-3  text-md hover:scale-105 duration-300  border rounded-sm">
-                      {Ticet.btn}
-                    </span>
-                  </div></Link>
+                    <div className=" flex justify-center  cursor-pointer  ">
+                      <span className=" bg-black text-white px-8 py-3  text-md hover:scale-105 duration-300  border rounded-sm">
+                        {Ticet.btn}
+                      </span>
+                    </div>
+                  </Link>
                 </div>
                 <img
+                  data-aos="fade-down"
+                  data-aos-duration="2000"
                   className=" flex-1 bg-transparent "
                   src={Ticet.img}
                   alt=""

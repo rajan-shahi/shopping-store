@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev::after {
   content: "next";

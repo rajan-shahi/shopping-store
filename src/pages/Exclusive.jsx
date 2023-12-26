@@ -7,11 +7,23 @@ import { Link } from "react-router-dom";
 
 const Exclusive = () => {
   return (
-    <div className=" flex justify-center">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      className=" flex justify-center"
+    >
       <div className=" flex flex-col md:px-0 px-4 w-full md:w-11/12">
         <div className=" md:flex justify-between items-center">
-          <img className=" md:w-5/12" src={shop5} alt="" />
-          <div className=" flex flex-col gap-5 md:w-6/12">
+          <img
+            data-aos="fade-down-right"  data-aos-duration="2000"
+            className=" md:w-5/12"
+            src={shop5}
+            alt=""
+          />
+          <div
+            data-aos="fade-up-left" data-aos-duration="2000"
+            className=" flex flex-col gap-5 md:w-6/12"
+          >
             <h1 className=" text-3xl text-gray-800 font-bold">
               Res Jump Suit Jacket
             </h1>
@@ -27,9 +39,10 @@ const Exclusive = () => {
               wearing on their own during the warmer months.
             </h1>
             <Link to={"/book"}>
-            <h1 className=" justify-start bg-black  text-white w-max px-8 py-2 hover:scale-105 hover:duration-500">
-              <button className="">BOOK NOW</button>{" "}
-            </h1></Link>
+              <h1 className=" justify-start bg-black  text-white w-max px-8 py-2 hover:scale-105 hover:duration-500">
+                <button className="">BOOK NOW</button>{" "}
+              </h1>
+            </Link>
           </div>
         </div>
         <div className=" md:flex justify-between">
@@ -38,7 +51,12 @@ const Exclusive = () => {
           <img className=" md:w-4/12" src={w2} alt="" />
         </div>
         <div className=" md:hidden flex ">
-          <Link to={"/book"}  className=" flex justify-center bg-black w-full text-white  py-2">BOOK NOW</Link>
+          <Link
+            to={"/book"}
+            className=" flex justify-center bg-black w-full text-white  py-2"
+          >
+            BOOK NOW
+          </Link>
         </div>
       </div>
     </div>

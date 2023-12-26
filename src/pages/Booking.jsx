@@ -25,6 +25,8 @@ const Booking = () => {
   const handleLogoinCart = () => {
     toast.success("Added To Cart");
   };
+
+
   return (
     <div className=" flex justify-center">
       <div className="md:flex md:px-0 px-4 justify-between md:w-11/12 w-full">

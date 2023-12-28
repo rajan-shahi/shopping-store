@@ -58,7 +58,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" flex  justify-center fixed left-0 right-0 top-0  z-10 bg-black">
+    <div className="  flex  justify-center fixed left-0 right-0 top-0  z-10 bg-black">
       <div className=" flex justify-between w-full md:px-0 px-4  md:w-11/12  py-5 items-center ">
         <span className="cursor-pointer text-white font-bold hover:underline hover:duration-300">
           <Link to={"/"}>

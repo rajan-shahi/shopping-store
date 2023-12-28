@@ -39,6 +39,7 @@ const Login = () => {
           >
             REGISTER
           </Link>
+        
         </div>
 
         {!open ? (

@@ -63,7 +63,7 @@ const products = [
   {
     img: shop2,
     name: "SPEED DEMONS-BLACK",
-    price: "NRP 3200",
+    price: "NRP 3700",
     iconP: <GoPlus />,
     iconE: <IoEyeOutline />,
   },

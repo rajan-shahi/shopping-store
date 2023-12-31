@@ -70,29 +70,33 @@ const Profile = () => {
         {/* profile edit */}
         {!edit && (
           <div className="md:top-6 top-7 right-1  md:right-72 absolute bg-white z-20  border border-gray-300 py-8 px-5 rounded-2xl md:w-4/12 w-full">
-            <div className=" flex flex-col gap-5">
+            <form className=" flex flex-col gap-5">
               <h1 className=" flex justify-center text-xl text-gray-600">
                 UPDATE YOUR INFORMATION
               </h1>
               <input
+                onSubmit={haldleProfile}
                 className="  outline-black  px-2 border border-gray-300 py-2  placeholder:text-gray-700"
                 type="text"
                 placeholder="Full Name"
+                required
               />
               <input
                 className="  outline-black  px-2 border border-gray-300 py-2  placeholder:text-gray-700"
                 type="email"
                 name="email"
                 placeholder="Email"
+                required
               />
               <input
                 className="   outline-black px-2 border border-gray-300 py-2  placeholder:text-gray-700"
                 type="number"
                 placeholder="Phone Number"
+                required
               />
 
               <h1>Profile Picture</h1>
-              <input type="file" />
+              <input type="file"  />
 
               <div className=" flex gap-3">
                 <Link
@@ -103,13 +107,13 @@ const Profile = () => {
                   Close
                 </Link>
                 <button
-                  onClick={haldleProfile}
+                  type="submit"
                   className=" w-full bg-black text-white py-1"
                 >
                   UPDATE
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         )}
       </div>

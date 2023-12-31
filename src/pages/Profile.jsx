@@ -75,7 +75,6 @@ const Profile = () => {
                 UPDATE YOUR INFORMATION
               </h1>
               <input
-                onSubmit={haldleProfile}
                 className="  outline-black  px-2 border border-gray-300 py-2  placeholder:text-gray-700"
                 type="text"
                 placeholder="Full Name"
@@ -108,6 +107,7 @@ const Profile = () => {
                 </Link>
                 <button
                   type="submit"
+                  onClick={haldleProfile}
                   className=" w-full bg-black text-white py-1"
                 >
                   UPDATE

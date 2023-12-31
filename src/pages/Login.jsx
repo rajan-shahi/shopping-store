@@ -20,7 +20,6 @@ const Login = () => {
     setOpen(!open);
   };
 
-
   return (
     <div className="h-[100vh] flex justify-center">
       <div className=" md:flex md:px-0 px-4 justify-between gap-10 w-full md:w-10/12 md:py-24 py-12">
@@ -39,11 +38,10 @@ const Login = () => {
           >
             REGISTER
           </Link>
-        
         </div>
 
         {!open ? (
-          <div className=" flex-1 flex flex-col gap-2">
+          <form className=" flex-1 flex flex-col gap-2">
             <h1 className=" border-b border-gray-300 py-4 text-md  text-black font-bold">
               LOGIN
             </h1>
@@ -53,17 +51,20 @@ const Login = () => {
                 name="email"
                 type="email"
                 placeholder="Enter Email Address"
+                required
               />
               <input
                 className="  outline-black px-2 border border-gray-300 py-2  placeholder:text-gray-700"
                 name="number"
                 type="number"
                 placeholder="Enter Phone Number"
+                required
               />
               <input
                 className="  px-2 outline-black border border-gray-300 py-2  placeholder:text-gray-700"
                 type="password"
                 placeholder="Pasword"
+                required
               />{" "}
             </div>
             <div className=" flex pb-3 justify-between">
@@ -73,33 +74,45 @@ const Login = () => {
               >
                 Forgot password
               </h1>
-              <h1 onClick={handlEmail} className=" cursor-pointer underline">Login via Email</h1>
+              <h1 onClick={handlEmail} className=" cursor-pointer underline">
+                Login via Email
+              </h1>
             </div>
             <button
+              type="submit"
               onClick={handleLogin}
               className=" bg-black text-white py-2 hover:scale-y-105 duration-500 "
             >
               LOGIN
             </button>
-          </div>
+          </form>
         ) : (
-          <div className=" flex-1 flex flex-col gap-2">
-            <h1 className=" border-b border-gray-300 py-4 text-md  text-black font-bold">RESET PASSWORD</h1>
+          <form className=" flex-1 flex flex-col gap-2">
+            <h1 className=" border-b border-gray-300 py-4 text-md  text-black font-bold">
+              RESET PASSWORD
+            </h1>
             <h2>Enter your email or phone number to reset your password.</h2>
             <input
-                className="  outline-black px-2 border border-gray-300 py-2  placeholder:text-gray-700"
-                name="number"
-                type="number"
-                placeholder="Enter Phone Number"
-              />
-              <button
+              className="  outline-black px-2 border border-gray-300 py-2  placeholder:text-gray-700"
+              name="number"
+              type="number"
+              placeholder="Enter Phone Number"
+              required
+            />
+            <button
+              type="submit"
               onClick={handlForget}
               className=" bg-black text-white py-2 hover:scale-y-105 duration-500 "
             >
               SEND VERIFICATION CODE
             </button>
-            <h1 className=" flex justify-center underline cursor-pointer" onClick={handleOpenClose}>Cancle</h1>
-          </div>
+            <h1
+              className=" flex justify-center underline cursor-pointer"
+              onClick={handleOpenClose}
+            >
+              Cancle
+            </h1>
+          </form>
         )}
       </div>
     </div>

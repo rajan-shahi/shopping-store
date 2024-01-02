@@ -3,8 +3,12 @@ import a1 from "../assets/a1.webp";
 import a2 from "../assets/a2.webp";
 import a3 from "../assets/a3.webp";
 import a4 from "../assets/a4.webp";
+import toast from "react-hot-toast";
 
 const Contact = () => {
+  const handleContact = () => {
+    toast.success("Thank You....");
+  };
   return (
     <div className=" flex justify-center">
       <div className=" flex justify-center flex-col gap-6 md:w-10/12 w-full md:px-0 px-4 pb-5 md:pt-24 pt-16">
@@ -33,22 +37,25 @@ const Contact = () => {
           <h1 className=" flex justify-center md:text-3xl text-2xl text-black  font-bold">
             CONTACT US
           </h1>
-          <div className=" flex flex-col gap-6">
+          <form onSubmit={handleContact} className=" flex flex-col gap-6">
             <input
               className=" px-2 outline-black  w-full border border-gray-300 py-2 placeholder:text-gray-700"
               type="text"
               placeholder="Full Name"
+              required
             />{" "}
             <input
               className=" px-2 outline-black w-full border border-gray-300 py-2 placeholder:text-gray-700"
               type="email"
               name="email"
               placeholder="Email Address"
+              required
             />{" "}
             <input
               className=" px-2 outline-black  w-full border border-gray-300 py-2 placeholder:text-gray-700"
               type="Number"
               placeholder="Phone NUmber"
+              required
             />{" "}
             <textarea className=" outline-black px-2  w-full border border-gray-300 py-2 h-[300px] "></textarea>
             <button
@@ -57,7 +64,7 @@ const Contact = () => {
             >
               Submit
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>

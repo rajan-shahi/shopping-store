@@ -28,7 +28,10 @@ const Buy = () => {
       {/* container */}
       <div className=" md:flex  justify-between w-full md:px-0 px-4 md:w-10/12 gap-5 md:py-20 py-16">
         {/* leftBar-Container */}
-        <div className=" flex flex-col gap-4 md:flex-1 md:pb-0 pb-12">
+        <form
+          onSubmit={haldleBuy}
+          className=" flex flex-col gap-4 md:flex-1 md:pb-0 pb-12"
+        >
           <div className=" flex flex-col gap-1">
             <h1 className=" text-xl">express checkout</h1>
             <div className=" flex justify-between  gap-3 border border-gray-300 px-4 py-5">
@@ -61,12 +64,14 @@ const Buy = () => {
             name="email"
             type="email"
             placeholder="Examples@ Gmail.com"
+            required
           />
           <input
             className=" px-2 outline-black border border-gray-300 py-2  placeholder:text-gray-700"
             name="text"
             type="text"
             placeholder="Ktm Outside The Roads"
+            required
           />
           <div className=" md:flex  justify-between gap-3">
             <div className=" flex-1   w-full md:py-0 py-3">
@@ -74,12 +79,14 @@ const Buy = () => {
                 className=" px-2 outline-black  w-full border border-gray-300 py-2  placeholder:text-gray-700"
                 type="text"
                 placeholder=" First Name"
+                required
               />{" "}
             </div>
             <input
               className="  px-2 outline-black flex-1 w-full border border-gray-300 py-2  placeholder:text-gray-700"
               type="text"
               placeholder=" Last Name"
+              required
             />
           </div>
           <input
@@ -88,17 +95,20 @@ const Buy = () => {
             name="number"
             type="number"
             placeholder="Phone"
+            required
           />
           <div className=" flex justify-between gap-3">
             <input
               className=" px-2 outline-black  w-full border border-gray-300 py-2  placeholder:text-gray-700"
               type="text"
               placeholder=" Tole/City"
+              required
             />
             <input
               className=" px-2 outline-black w-full border border-gray-300 py-2  placeholder:text-gray-700"
               type="text"
               placeholder=" Address"
+              required
             />
           </div>
           <div className=" w-full md:pt-7">
@@ -106,10 +116,11 @@ const Buy = () => {
               className=" px-2 outline-black w-full border border-gray-300 py-2  placeholder:text-gray-700"
               type="text"
               placeholder="Notes"
+              required
             />
           </div>
           <button
-            onClick={haldleBuy}
+            type="submit"
             className=" bg-black py-3 text-white hover:scale-y-105 hover:duration-500"
           >
             VERYFY PHONE NUMBER
@@ -128,7 +139,7 @@ const Buy = () => {
           <button className=" bg-black py-3 text-white hover:scale-y-105 hover:duration-500">
             VERYFY
           </button>
-        </div>
+        </form>
         {/* rightBar-Container */}
         <div className=" flex flex-col gap-4 md:flex-1">
           <div className="div">
@@ -170,16 +181,19 @@ const Buy = () => {
             Enter your coupOn code to get extra discount.
           </h1>
 
-          <div className=" flex">
+          <form className=" flex">
             <input
               className=" px-2 outline-black border border-gray-300 w-full  placeholder:text-black py-2"
               type="text"
               placeholder="COUPON"
             />
-            <button className=" hover:scale-105 duration-500 bg-black text-white py-2 px-14 ">
+            <button
+              type="submit"
+              className=" hover:scale-105 duration-500 bg-black text-white py-2 px-14 "
+            >
               APPLY
             </button>
-          </div>
+          </form>
           <div className=" border-b border-gray-300 py-2"></div>
           <div className=" flex flex-col gap-2">
             <h1 className=" text-gray-600">PAYMENT DETAILS</h1>

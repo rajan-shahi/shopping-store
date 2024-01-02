@@ -41,7 +41,7 @@ const Login = () => {
         </div>
 
         {!open ? (
-          <form className=" flex-1 flex flex-col gap-2">
+          <form onSubmit={handleLogin} className=" flex-1 flex flex-col gap-2">
             <h1 className=" border-b border-gray-300 py-4 text-md  text-black font-bold">
               LOGIN
             </h1>
@@ -80,7 +80,6 @@ const Login = () => {
             </div>
             <button
               type="submit"
-              onClick={handleLogin}
               className=" bg-black text-white py-2 hover:scale-y-105 duration-500 "
             >
               LOGIN

@@ -90,7 +90,7 @@ const Privacy = () => {
             appropriate data collection, storage, and processing practices and
             security measures to protect against unauthorized access,
             alteration, disclosure, or destruction of your personal information,
-            username, password, transaction information, and data stored on our
+            username, password, information, and data stored on our
             Site. Sensitive and private data exchange between the Site and its
             Users happens over an SSL secured communication channel and is
             encrypted and protected with digital signatures. Brocade Nepal uses

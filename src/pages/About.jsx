@@ -16,7 +16,7 @@ const About = () => {
             patterns that are characteristic of Nepali textiles. Each garment is
             crafted with precision and care, using high-quality materials that
             ensure both durability and comfort. From traditional sarees and
-            kurtas to modern fusion wear, Brocade offers a diverse range of
+            kurtas to modern , Brocade offers a diverse range of
             clothing options that cater to every occasion.
           </h2>
         </div>

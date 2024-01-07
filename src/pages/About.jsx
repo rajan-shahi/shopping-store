@@ -59,7 +59,7 @@ const About = () => {
           identity that is uniquely Nepali, while also resonating with the
           global fashion community. We believe that by combining traditional
           designs with modern elements, we can create a clothing line that is
-          both timeless and contemporary, and that celebrates the beauty and
+          both timeless and contemporary and
           diversity of Nepali culture.
         </div>
         <div className="div">

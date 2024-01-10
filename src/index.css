@@ -18,10 +18,3 @@
 .swiper-pagination-bullet-active {
   background-color: gray;
 }
-
-.headroom {
-  top: 0;
-  left: 0;
-  right: 0;
-z-index: 20;
-}

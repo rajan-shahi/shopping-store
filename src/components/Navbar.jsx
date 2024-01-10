@@ -398,7 +398,7 @@ const Navbar = () => {
                   -
                 </h1>
                 <h1 className=" text-xl ">{count2}</h1>
-                <h1 onClick={decrease2} className=" cursor-pointer">
+                <h1 onClick={increase2} className=" cursor-pointer">
                   +
                 </h1>
               </span>

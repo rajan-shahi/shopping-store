@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import { Link } from "react-router-dom";
 
+
 const Slider = () => {
   return (
     <div className=" md:py-0 md:px-0 px-4  pt-16 flex justify-center">

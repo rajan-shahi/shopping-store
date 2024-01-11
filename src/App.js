@@ -28,6 +28,7 @@ function App() {
 
   return (
     <div className=" overflow-x-hidden">
+      {" "}
       <BrowserRouter>
         <Navbar />
         <div className=" md:py-10 py-14">

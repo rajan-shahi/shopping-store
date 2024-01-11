@@ -5,7 +5,9 @@ const About = () => {
     <div className=" flex justify-center">
       <div className=" flex justify-center flex-col gap-6 md:w-10/12 w-full md:px-0 px-4 pb-5 md:pt-24 pt-16">
         <div className="div">
-          <h1 className=" md:text-3xl text-2xl text-black font-bold">ABOUT US.</h1>
+          <h1 className=" md:text-3xl text-2xl text-black font-bold">
+            ABOUT US.
+          </h1>
           <h2>
             Brocade is a Nepali clothing fashion brand that aims to bring the
             essence of Nepali culture and tradition to its fashion line. The
@@ -16,11 +18,11 @@ const About = () => {
             patterns that are characteristic of Nepali textiles. Each garment is
             crafted with precision and care, using high-quality materials that
             ensure both durability and comfort. From traditional sarees and
-            kurtas to modern , Brocade offers a diverse range of
-            clothing options that cater to every occasion.
+            kurtas to modern , Brocade offers a diverse range of clothing
+            options that cater to every occasion.
           </h2>
         </div>
-        <div className="div">
+        <div>
           With a deep-rooted commitment to sustainability, Brocade sources its
           materials from local artisans and weavers, supporting the traditional
           craft community of Nepal. The brand also incorporates eco-friendly
@@ -31,8 +33,10 @@ const About = () => {
           designs, the brand aims to create a fashion identity that is both
           timeless and contemporary.
         </div>
-        <div className="div">
-          <h1 className=" md:text-2xl text-xl text-black font-semibold">What we do ?</h1>
+        <div>
+          <h1 className=" md:text-2xl text-xl text-black font-semibold">
+            What we do ?
+          </h1>
           <h2>
             At Brocade, we design and create clothing that reflects the rich
             cultural heritage of Nepal, while also catering to the modern
@@ -46,7 +50,7 @@ const About = () => {
             methods to minimize our environmental impact.
           </h2>
         </div>
-        <div className="div">
+        <div>
           Our range of clothing options includes traditional sarees, kurtas, and
           fusion wear, as well as contemporary designs that blend traditional
           and modern elements. We also offer customized designs to meet the
@@ -59,11 +63,12 @@ const About = () => {
           identity that is uniquely Nepali, while also resonating with the
           global fashion community. We believe that by combining traditional
           designs with modern elements, we can create a clothing line that is
-          both timeless and contemporary and
-          diversity of Nepali culture.
+          both timeless and contemporary and diversity of Nepali culture.
         </div>
-        <div className="div">
-          <h1 className=" md:text-2xl text-xl text-black font-semibold">Our Vision and Goals.</h1>
+        <div>
+          <h1 className=" md:text-2xl text-xl text-black font-semibold">
+            Our Vision and Goals.
+          </h1>
           <h2>
             At Brocade, our aim is to promote and preserve the rich cultural
             heritage of Nepal through our clothing line. We believe that the
@@ -86,13 +91,13 @@ const About = () => {
           their work. Ultimately, our aim is to create a clothing line that is
           both beautiful and meaningful, and that reflects the unique cultural
           heritage of Nepal. We believe that by promoting traditional Nepali
-          textiles and supporting the local artisan and weaver communities, we
-          can help to preserve this rich cultural heritage for generations to
-          come.
+          textiles and supporting the local artisan and weaver communities.
         </div>
         <div className=" flex flex-col gap-6">
           <div>
-            <h1 className=" md:text-2xl text-xl text-black font-semibold">Our Impacts.</h1>
+            <h1 className=" md:text-2xl text-xl text-black font-semibold">
+              Our Impacts.
+            </h1>
             <h2>
               1. Cultural preservation: By promoting traditional Nepali textiles
               and designs, we are helping to preserve and celebrate the rich

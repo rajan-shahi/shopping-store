@@ -86,7 +86,7 @@ const Login = () => {
             </button>
           </form>
         ) : (
-          <form className=" flex-1 flex flex-col gap-2">
+          <form onSubmit={handlForget} className=" flex-1 flex flex-col gap-2">
             <h1 className=" border-b border-gray-300 py-4 text-md  text-black font-bold">
               RESET PASSWORD
             </h1>
@@ -100,7 +100,6 @@ const Login = () => {
             />
             <button
               type="submit"
-              onClick={handlForget}
               className=" bg-black text-white py-2 hover:scale-y-105 duration-500 "
             >
               SEND VERIFICATION CODE

@@ -62,8 +62,7 @@ const About = () => {
           recognized and valued. Our ultimate goal is to create a fashion
           identity that is uniquely Nepali, while also resonating with the
           global fashion community. We believe that by combining traditional
-          designs with modern elements, we can create a clothing line that is
-          both timeless and contemporary and diversity of Nepali culture.
+          designs with modern elements.
         </div>
         <div>
           <h1 className=" md:text-2xl text-xl text-black font-semibold">

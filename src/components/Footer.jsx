@@ -62,7 +62,7 @@ const Footer = () => {
         <span>Designed & Developed By </span>
         <a
           target="-blank"
-          href="https://github.com/rajan-shahi?tab=overview&from=2023-12-01&to=2023-12-20"
+          href="https://portfolio-rajan-bahadur-shahi.vercel.app/"
           className=" px-1 text-blue-500 cursor-pointer underline"
         >
           Rajan Bahadur Shahi

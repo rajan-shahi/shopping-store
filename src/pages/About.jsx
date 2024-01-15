@@ -61,8 +61,7 @@ const About = () => {
           skills and expertise, and ensuring that their contributions are
           recognized and valued. Our ultimate goal is to create a fashion
           identity that is uniquely Nepali, while also resonating with the
-          global fashion community. We believe that by combining traditional
-          designs with modern elements.
+          global fashion community. 
         </div>
         <div>
           <h1 className=" md:text-2xl text-xl text-black font-semibold">

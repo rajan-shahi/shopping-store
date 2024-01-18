@@ -87,8 +87,7 @@ const About = () => {
           communities, providing them with a platform to showcase their skills
           and expertise, and ensuring that they receive fair compensation for
           their work. Ultimately, our aim is to create a clothing line that is
-          both beautiful and meaningful, and that reflects the unique cultural
-          heritage of Nepal.
+          both beautiful and meaningful.
         </div>
         <div className=" flex flex-col gap-6">
           <div>

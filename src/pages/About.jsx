@@ -112,8 +112,7 @@ const About = () => {
             3. Community support: We work closely with local artisans and
             weavers, providing them with fair compensation for their work and
             helping to promote their skills and expertise. By supporting these
-            communities, we are helping to preserve traditional Nepali crafts
-            and ensure that they remain viable for future generations.
+            communities, we are helping to preserve traditional Nepali.
           </h1>
           <h1>
             5. Social responsibility: We are committed to ethical business

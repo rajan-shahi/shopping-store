@@ -46,8 +46,7 @@ const About = () => {
             sustainability. Our clothing line is carefully crafted to ensure
             that each garment is not only aesthetically pleasing but also
             functional and durable. We use high-quality materials, sourced from
-            local artisans and weavers, and employ eco-friendly production
-            methods to minimize our environmental impact.
+            local artisans and weavers.{" "}
           </h2>
         </div>
         <div>

@@ -60,8 +60,7 @@ const About = () => {
           artisans and weavers, providing them with a platform to showcase their
           skills and expertise, and ensuring that their contributions are
           recognized and valued. Our ultimate goal is to create a fashion
-          identity that is uniquely Nepali, while also resonating with the
-          global fashion community. 
+          identity that is uniquely Nepali.
         </div>
         <div>
           <h1 className=" md:text-2xl text-xl text-black font-semibold">

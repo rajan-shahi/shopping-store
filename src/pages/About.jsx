@@ -76,8 +76,7 @@ const About = () => {
             unique and vibrant fashion identity that celebrates the diversity
             and richness of Nepali culture. Through our designs, we strive to
             showcase the beauty and intricate details of traditional Nepali
-            textiles, while also incorporating modern elements to appeal to a
-            global audience.
+            textiles.
           </h2>
         </div>
         <div className="div">

@@ -44,9 +44,7 @@ const About = () => {
             unique and vibrant garments that are inspired by the traditional
             textile patterns of Nepal, with a focus on quality, comfort, and
             sustainability. Our clothing line is carefully crafted to ensure
-            that each garment is not only aesthetically pleasing but also
-            functional and durable. We use high-quality materials, sourced from
-            local artisans and weavers.{" "}
+            that each garment is not only aesthetically pleasing.
           </h2>
         </div>
         <div>

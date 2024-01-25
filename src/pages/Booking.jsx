@@ -61,7 +61,7 @@ const Booking = () => {
             <span className="  bg-blue-700 h-5 w-5 cursor-pointer"></span>
             <span className=" bg-gray-700 h-5 w-5 cursor-pointer"></span>
           </div>
-          <h1 className=" md:text-3xl  text-2xl text-black">
+          <h1  className=" md:text-3xl  text-2xl text-black">
             NPR. {3700 * count}{" "}
           </h1>
           <span className=" flex  gap-4 items-center">

@@ -56,8 +56,7 @@ const About = () => {
           traditional craft community of Nepal. We work closely with local
           artisans and weavers, providing them with a platform to showcase their
           skills and expertise, and ensuring that their contributions are
-          recognized and valued. Our ultimate goal is to create a fashion
-          identity that is uniquely Nepali.
+          recognized and valued. 
         </div>
         <div>
           <h1 className=" md:text-2xl text-xl text-black font-semibold">

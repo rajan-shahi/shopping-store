@@ -56,7 +56,7 @@ const About = () => {
           traditional craft community of Nepal. We work closely with local
           artisans and weavers, providing them with a platform to showcase their
           skills and expertise, and ensuring that their contributions are
-          recognized and valued. 
+          recognized. 
         </div>
         <div>
           <h1 className=" md:text-2xl text-xl text-black font-semibold">

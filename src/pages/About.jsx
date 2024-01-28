@@ -70,8 +70,7 @@ const About = () => {
             to the forefront of the global fashion industry. We aim to create a
             unique and vibrant fashion identity that celebrates the diversity
             and richness of Nepali culture. Through our designs, we strive to
-            showcase the beauty and intricate details of traditional Nepali
-            textiles.
+            showcase the beauty and intricate details of traditional Nepali.
           </h2>
         </div>
         <div className="div">
